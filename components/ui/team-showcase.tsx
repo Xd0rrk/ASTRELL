@@ -49,7 +49,7 @@ const DEFAULT_MEMBERS: TeamMember[] = [
   {
     id: '5',
     name: 'Simon A-A',
-    role: 'SYSTEM ENGINEER',
+    role: 'SYSTEMS ENGINEER',
     image: '/simon_aa.jpg',
     social: { instagram: 'https://www.instagram.com/asxsimon', linkedin: '#' },
   },

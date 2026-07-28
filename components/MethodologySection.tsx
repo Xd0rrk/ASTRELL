@@ -21,45 +21,45 @@ const PHASES: Phase[] = [
   {
     id: '01',
     number: '01',
-    title: 'DISCOVERY',
-    subtitle: 'QUANTITATIVE AUDIT & SCOPE',
-    timeline: 'WEEKS 1–2',
-    focus: 'Commercial & Market Blueprint',
-    deliverable: 'KPI Objective Brief',
-    summary: 'We unpack your business metrics, competitive advantages, and conversion bottlenecks to build a tight commercial strategy.',
-    metrics: '100% Scope Precision',
+    title: 'Discovery',
+    subtitle: 'WEEKS 1–2',
+    timeline: 'Weeks 1–2',
+    focus: 'Understanding your business',
+    deliverable: 'Strategy & Goals Brief',
+    summary: 'We start with your numbers, your customers, and what\'s holding growth back — so every decision after this is built on real insight, not guesswork.',
+    metrics: 'Strategy & Scope',
   },
   {
     id: '02',
     number: '02',
-    title: 'BLUEPRINT',
-    subtitle: 'INTERACTIVE GRID DIRECTIONS',
-    timeline: 'WEEKS 3–5',
-    focus: 'UI Geometry & Design Systems',
-    deliverable: 'Interactive Figma Prototype',
-    summary: 'We craft distinct interactive design routes, experimenting with responsive typography, color theory, and motion.',
-    metrics: '3 Distinct Routes',
+    title: 'Blueprint',
+    subtitle: 'WEEKS 3–5',
+    timeline: 'Weeks 3–5',
+    focus: 'Designing the experience',
+    deliverable: 'Interactive Prototype · 3 Design Directions',
+    summary: 'We design multiple distinct directions — exploring layout, typography, color, and motion — so you choose the one that\'s right, not the only one you\'ve seen.',
+    metrics: '3 Directions',
   },
   {
     id: '03',
     number: '03',
-    title: 'EXECUTION',
-    subtitle: 'SURGICAL CRAFT & DEVELOPMENT',
-    timeline: 'WEEKS 6–8',
-    focus: 'Next.js & Motion Engineering',
-    deliverable: 'Staging Environment Access',
-    summary: 'We convert locked designs into high-performance code, fine-tuning smooth animations, responsive grids, and speed.',
-    metrics: '98+ Lighthouse Rating',
+    title: 'Execution',
+    subtitle: 'WEEKS 6–8',
+    timeline: 'Weeks 6–8',
+    focus: 'Building it for real',
+    deliverable: 'Live Staging Site · 98+ Lighthouse Score',
+    summary: 'Approved designs become fast, responsive, production-ready code — tested for performance every step of the way.',
+    metrics: '98+ Lighthouse',
   },
   {
     id: '04',
     number: '04',
-    title: 'LAUNCH',
-    subtitle: 'DEPLOYMENT & SOCIAL ASSETS',
-    timeline: 'WEEKS 9–10',
-    focus: 'Global Infrastructure & Handoff',
-    deliverable: 'Production System & Asset Package',
-    summary: 'We deploy your platform live, hand over full source code and design tokens, and launch high-impact social marketing assets.',
+    title: 'Launch',
+    subtitle: 'WEEKS 9–10',
+    timeline: 'Weeks 9–10',
+    focus: 'Going live',
+    deliverable: 'Full Handoff Package · Zero-Downtime Launch',
+    summary: 'We deploy your platform, hand over full source files and brand assets, and launch your marketing materials alongside it.',
     metrics: 'Zero Downtime',
   }
 ];
@@ -232,15 +232,15 @@ export default function MethodologySection() {
           <div className="space-y-4 max-w-3xl">
             <div className="flex items-center gap-3 text-[#FF3E00] font-mono text-xs uppercase tracking-[0.3em] font-bold">
               <span className="w-8 h-[2px] bg-[#FF3E00]" />
-              <span>METHODOLOGY & ALIGNMENT</span>
+              <span>How We Work Together</span>
             </div>
-            <h2 className="text-5xl sm:text-7xl md:text-8xl font-display font-black tracking-tighter text-white uppercase leading-[0.92]">
-              SYSTEMATIC <br />
-              <span className="text-[#FF3E00]">ALIGNMENT.</span>
+            <h2 className="text-4xl sm:text-6xl md:text-7xl font-display font-black tracking-tighter text-white uppercase leading-[0.95]">
+              A clear process, <br />
+              <span className="text-[#FF3E00]">from day one to launch.</span>
             </h2>
           </div>
           <p className="text-neutral-400 text-base sm:text-lg font-light leading-relaxed max-w-md">
-            Zero mysterious design &ldquo;magic.&rdquo; We enforce commercial credibility through strict timelines, visual milestones, and transparent execution.
+            No black boxes. You'll always know what's happening, what's next, and why.
           </p>
         </div>
 
@@ -381,10 +381,10 @@ export default function MethodologySection() {
         <div className="p-8 rounded-2xl bg-gradient-to-r from-neutral-900 via-[#141418] to-neutral-900 border border-white/15 flex flex-col sm:flex-row items-center justify-between gap-6">
           <div className="space-y-1 text-center sm:text-left">
             <div className="text-xl sm:text-2xl font-display font-bold text-white tracking-tight uppercase">
-              READY TO ALIGN YOUR NEXT PROJECT?
+              Ready to start your project?
             </div>
             <p className="text-xs font-mono text-neutral-400">
-              Schedule a 15-minute scoping call to map your commercial timeline.
+              Book a free 15-minute call — we'll map your timeline before you commit to anything.
             </p>
           </div>
 
@@ -393,7 +393,7 @@ export default function MethodologySection() {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-[#FF3E00] text-white font-mono font-bold text-xs uppercase tracking-wider hover:bg-[#E03600] transition-all shadow-[0_0_30px_rgba(255,62,0,0.4)] hover:scale-105 flex-shrink-0"
             id="btn-[#FF3E00]-methodology-cta"
           >
-            <span>Book Alignment Call</span>
+            <span>Book a Free Call</span>
             <ArrowRight size={15} />
           </button>
         </div>

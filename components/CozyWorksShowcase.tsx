@@ -29,20 +29,20 @@ const WORKS: WorkItem[] = [
   {
     id: 'work-aura',
     title: 'Maison de Aura',
-    category: 'Packaging & Digital Experience',
+    category: 'Packaging & E-Commerce',
     year: '2026',
     location: 'Paris, France',
     client: 'Aura Cosmetics',
-    description: 'A tactile, sustainable luxury skincare identity and high-conversion European e-commerce experience crafted with organic papercraft materials.',
+    description: 'A sustainable, tactile packaging system and e-commerce build for a luxury skincare brand — designed to feel as premium unwrapped as it looks online.',
     image: 'https://picsum.photos/seed/skincare/1200/900',
     aspectRatio: 'aspect-[4/3]',
-    tags: ['Brand Identity', 'Packaging Architecture', 'Next.js E-Commerce'],
-    metrics: '+240% Online Conversion',
+    tags: ['Brand Identity', 'Packaging', 'Next.js E-Commerce'],
+    metrics: '+240% online conversion',
     fullDetails: {
-      role: 'Lead Brand Architecture & E-Commerce Engineering',
+      role: 'Brand & E-Commerce Lead',
       timeline: '12 Weeks',
-      overview: 'We transformed Maison de Aura’s physical presence into an eco-conscious collector item, pairing tactile debossed papercraft containers with an instant-loading global web shop.',
-      deliverables: ['Custom Package CAD Specs', 'Sustainable Material Sourcing', 'Global Web Storefront', 'Editorial Photography'],
+      overview: 'We rebuilt Maison de Aura\'s packaging in debossed, recyclable papercraft and paired it with an instant-loading online store — turning an everyday skincare purchase into a collectible unboxing.',
+      deliverables: ['Packaging CAD & Specs', 'Sustainable Material Sourcing', 'Online Storefront', 'Editorial Photography'],
       gallery: [
         'https://picsum.photos/seed/skincare1/1000/750',
         'https://picsum.photos/seed/skincare2/1000/750'
@@ -56,16 +56,16 @@ const WORKS: WorkItem[] = [
     year: '2026',
     location: 'Zurich, Switzerland',
     client: 'Vertex Group',
-    description: 'An elegant, dark-mode financial cockpit engineered for ultra-low latency transaction monitoring and institutional liquidity management.',
+    description: 'A dark-mode trading dashboard built for split-second decisions — engineered for speed, clarity, and institutional-grade reliability.',
     image: 'https://picsum.photos/seed/webui/1200/900',
     aspectRatio: 'aspect-[16/10]',
-    tags: ['Fintech Dashboard', 'Design System', 'Real-Time WebSockets'],
-    metrics: '€18M Capital Raised',
+    tags: ['Fintech Dashboard', 'Design System', 'Real-Time Data'],
+    metrics: '€18M capital raised',
     fullDetails: {
-      role: 'UI/UX Architecture & Product Strategy',
+      role: 'UI/UX & Product Strategy',
       timeline: '16 Weeks',
-      overview: 'Designed a high-density financial cockpit that simplifies complex market data feeds into a fluid, keyboard-navigable dark interface.',
-      deliverables: ['Design System System Tokens', 'Real-Time Data Viz', 'Keyboard Shortcuts Pipeline', 'Dark Mode Theme Engine'],
+      overview: 'We turned dense, fast-moving market data into a fluid, keyboard-first interface that traders can navigate without looking away from the numbers.',
+      deliverables: ['Design System', 'Real-Time Data Visualization', 'Keyboard Navigation', 'Dark Mode Interface'],
       gallery: [
         'https://picsum.photos/seed/webui1/1000/750',
         'https://picsum.photos/seed/webui2/1000/750'
@@ -79,16 +79,16 @@ const WORKS: WorkItem[] = [
     year: '2025',
     location: 'Tokyo, Japan',
     client: 'Chrono Aerospace',
-    description: 'An immersive digital habitat capsule simulator and brand design system celebrating commercial zero-gravity architectural habitats.',
+    description: 'A brand identity and interactive 3D simulator built to bring commercial space habitats to life for investors and enthusiasts alike.',
     image: 'https://picsum.photos/seed/spatial/1200/900',
     aspectRatio: 'aspect-[4/3]',
     tags: ['3D WebGL', 'Aerospace Branding', 'Spatial Design'],
-    metrics: '3.4M Engagements',
+    metrics: '3.4M engagements',
     fullDetails: {
-      role: 'Creative Direction & 3D Interactive Design',
+      role: 'Creative Direction & 3D Design',
       timeline: '14 Weeks',
-      overview: 'Developed an interactive 3D WebGL simulator giving investors and aerospace enthusiasts an authentic look inside commercial space capsule modules.',
-      deliverables: ['Interactive 3D WebGL Explorer', 'Brand Guidelines Handbook', 'Spatial Telemetry UI', 'Investor Deck System'],
+      overview: 'We built a WebGL simulator that lets people step inside a zero-gravity habitat module — turning a hard-to-picture concept into something investors could explore for themselves.',
+      deliverables: ['3D WebGL Explorer', 'Brand Guidelines', 'Spatial UI', 'Investor Deck'],
       gallery: [
         'https://picsum.photos/seed/spatial1/1000/750',
         'https://picsum.photos/seed/spatial2/1000/750'
@@ -102,16 +102,16 @@ const WORKS: WorkItem[] = [
     year: '2025',
     location: 'London, UK',
     client: 'Lumina Acoustics',
-    description: 'Tactile industrial design accents, anodized aluminum hardware aesthetics, and a companion iOS soundstage equalizer application.',
+    description: 'Industrial design and a companion iOS app for a flagship pair of spatial headphones — built to sell out on day one.',
     image: 'https://picsum.photos/seed/audio/1200/900',
     aspectRatio: 'aspect-[16/10]',
-    tags: ['Industrial Aesthetics', 'iOS Companion App', 'Soundstage Design'],
-    metrics: '45,000 Units Sold Out',
+    tags: ['Industrial Design', 'iOS App', 'Soundstage UI'],
+    metrics: '45,000 units sold out',
     fullDetails: {
-      role: 'Hardware Aesthetics & Companion Software UI',
+      role: 'Hardware & Software Design',
       timeline: '20 Weeks',
-      overview: 'Engineered a cohesive physical and digital ecosystem for Lumina’s flagship spatial headphones, resulting in an immediate pre-order sellout.',
-      deliverables: ['Hardware Aesthetic Specs', 'iOS Equalizer Interface', 'Tactile Soundstage UI', 'E-Commerce Launch Portal'],
+      overview: 'We designed the anodized aluminum hardware and the equalizer app that controls it as one cohesive product — and pre-orders sold out within days.',
+      deliverables: ['Hardware Design Specs', 'iOS Equalizer App', 'Soundstage Interface', 'Launch Store'],
       gallery: [
         'https://picsum.photos/seed/audio1/1000/750',
         'https://picsum.photos/seed/audio2/1000/750'
@@ -219,7 +219,7 @@ function ParallaxWorkCard({
             whileTap={{ scale: 0.95 }}
             className="px-6 py-3 rounded-full bg-white text-black font-mono text-xs uppercase tracking-wider font-bold shadow-2xl backdrop-blur-md flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
           >
-            <span>Inspect Case Study</span>
+            <span>View Case Study</span>
             <ArrowUpRight size={14} />
           </motion.div>
         </div>
@@ -287,15 +287,18 @@ export default function CozyWorksShowcase() {
           
           <div className="max-w-2xl space-y-4">
             <span className="text-xs font-mono uppercase tracking-[0.3em] text-[#FF3E00] font-semibold block">
-              SELECTED WORKS • 2025–2026
+              Selected Work · 2025–2026
             </span>
 
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-light text-white tracking-tight leading-[1.08]">
-              Crafted with <span className="font-serif italic font-normal text-neutral-300">quiet confidence</span> & purpose.
+              Work that <span className="font-serif italic font-normal text-neutral-300">pays for itself.</span>
             </h2>
 
             <p className="text-neutral-400 text-base md:text-lg font-light leading-relaxed pt-2">
-              A curated selection of digital products, brand identities, and spatial interfaces engineered to elevate industry standards.
+              A look at the brands, products, and platforms we've helped launch — and the results they've delivered.
+            </p>
+            <p className="text-xs font-mono text-neutral-500 pt-1">
+              Note: All performance metrics are measured over the 90 days following launch.
             </p>
           </div>
 
@@ -401,14 +404,11 @@ export default function CozyWorksShowcase() {
                     <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/40 via-neutral-900/60 to-black border border-emerald-500/30 space-y-2 relative overflow-hidden">
                       <div className="flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-widest font-semibold">
                         <Sparkles size={14} />
-                        <span>Audited Impact Metric</span>
+                        <span>Performance Metric</span>
                       </div>
                       <div className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
                         {activeItem.metrics}
                       </div>
-                      <p className="text-xs text-neutral-400 font-light pt-1">
-                        Verified post-launch performance measured across 90 days.
-                      </p>
                     </div>
                   </div>
 
@@ -495,10 +495,10 @@ export default function CozyWorksShowcase() {
                   <div className="p-8 rounded-2xl bg-gradient-to-r from-neutral-900 via-[#16161D] to-neutral-900 border border-white/15 flex flex-col md:flex-row items-center justify-between gap-6">
                     <div className="space-y-1 text-center md:text-left">
                       <div className="text-lg sm:text-xl font-display font-medium text-white">
-                        Envisioning similar caliber results for your brand?
+                        Want results like these for your brand?
                       </div>
                       <p className="text-xs font-mono text-neutral-400">
-                        Direct partner access • Guaranteed launch timeline • Fixed agency fee
+                        Direct access to your team · Fixed timeline · Fixed fee
                       </p>
                     </div>
 
@@ -510,7 +510,7 @@ export default function CozyWorksShowcase() {
                       className="w-full md:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-white text-black font-mono font-bold text-xs uppercase tracking-wider hover:bg-neutral-200 transition-all shadow-xl hover:scale-105 flex-shrink-0"
                       id="btn-cozy-modal-inquire"
                     >
-                      <span>Start A Project Inquiry</span>
+                      <span>Start a Project Inquiry</span>
                       <ArrowRight size={14} />
                     </button>
                   </div>

@@ -321,9 +321,11 @@ function CardModal() {
               <button
                 type="button"
                 onClick={toggleFavorite}
-                className="inline-flex h-10 w-10 items-center justify-center rounded-lg text-[#FF3E00] outline-none transition duration-300 ease-out hover:bg-[#FF3E00]/25 bg-[#FF3E00]/10 border border-[#FF3E00]/20 active:scale-[0.97]"
+                title="Save to Favorites"
+                className="inline-flex h-10 px-3 items-center justify-center rounded-lg text-[#FF3E00] outline-none transition duration-300 ease-out hover:bg-[#FF3E00]/25 bg-[#FF3E00]/10 border border-[#FF3E00]/20 active:scale-[0.97] gap-1.5 text-xs font-mono"
               >
                 <Heart className="h-4 w-4" strokeWidth={1.8} fill={isFavorited ? "currentColor" : "none"} />
+                <span className="hidden sm:inline">Save to Favorites</span>
               </button>
             </div>
           </div>
@@ -434,10 +436,11 @@ export default function StellarCardGallerySingle({ scrollYProgress }: { scrollYP
         <div className="absolute top-6 left-6 z-20 text-white pointer-events-none select-none max-w-xs md:max-w-md">
           <div className="flex items-center gap-2 mb-1.5">
             <span className="h-1.5 w-1.5 rounded-full bg-[#FF3E00] animate-pulse" />
-            <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#FF3E00] font-bold">Stellar 3D Orbit</span>
+            <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#FF3E00] font-bold">Explore Our Work In 3D</span>
           </div>
-          <h3 className="font-display text-xl md:text-2xl font-black mb-1 text-white tracking-tight uppercase leading-none">THE SHOWCASE GALAXY</h3>
-          <p className="text-[9px] font-mono text-neutral-400 tracking-wider">Drag to rotate orbit • Scroll to zoom • Click cards to inspect</p>
+          <h3 className="font-display text-xl md:text-2xl font-black mb-1 text-white tracking-tight uppercase leading-none">Step inside the gallery.</h3>
+          <p className="text-[10px] font-mono text-neutral-300 tracking-wide mb-1">A closer look at packaging, illustration, and spatial design work — rotate, zoom, and inspect each piece.</p>
+          <p className="text-[9px] font-mono text-neutral-500 tracking-wider">Drag to rotate · Scroll to zoom · Click any piece to inspect</p>
         </div>
       </div>
     </CardProvider>

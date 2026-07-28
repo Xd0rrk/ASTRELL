@@ -20,7 +20,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-neutral-400 font-light text-lg max-w-md leading-relaxed">
-              We engineer digital legacies. Premium website design, branding, and digital solutions for clients worldwide.
+              A creative studio building websites, brands, and digital products designed to grow your business.
             </p>
             <div className="flex gap-4">
               <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
@@ -43,12 +43,18 @@ export default function Footer() {
             <div className="space-y-6">
               <h4 className="text-[10px] font-mono text-white/40 uppercase font-bold tracking-widest">Navigation</h4>
               <ul className="space-y-4">
-                {['Work', 'Services', 'Methodology', 'Team', 'Contact'].map((item) => (
-                  <li key={item}>
-                    <Link href={`#${item.toLowerCase()}`} className="text-neutral-300 hover:text-white transition-colors text-sm font-light flex items-center group">
+                {[
+                  { name: 'Work', target: 'proof' },
+                  { name: 'Expertise', target: 'expertise' },
+                  { name: 'Process', target: 'process' },
+                  { name: 'Team', target: 'team' },
+                  { name: 'Contact', target: 'contact' }
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link href={`#${item.target}`} className="text-neutral-300 hover:text-white transition-colors text-sm font-light flex items-center group">
                       <span className="relative overflow-hidden">
-                        <span className="block transition-transform duration-300 group-hover:-translate-y-full">{item}</span>
-                        <span className="absolute top-0 left-0 text-[#FF3E00] transition-transform duration-300 translate-y-full group-hover:translate-y-0">{item}</span>
+                        <span className="block transition-transform duration-300 group-hover:-translate-y-full">{item.name}</span>
+                        <span className="absolute top-0 left-0 text-[#FF3E00] transition-transform duration-300 translate-y-full group-hover:translate-y-0">{item.name}</span>
                       </span>
                     </Link>
                   </li>
@@ -61,15 +67,13 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <div className="text-neutral-300 text-sm font-light">London, UK</div>
-                  <div className="text-neutral-500 text-xs font-mono mt-1">HQ / BST</div>
+                  <div className="text-neutral-500 text-xs font-mono mt-1">HQ</div>
                 </li>
                 <li>
                   <div className="text-neutral-300 text-sm font-light">Paris, FR</div>
-                  <div className="text-neutral-500 text-xs font-mono mt-1">CET</div>
                 </li>
                 <li>
                   <div className="text-neutral-300 text-sm font-light">Dubai, UAE</div>
-                  <div className="text-neutral-500 text-xs font-mono mt-1">GST</div>
                 </li>
               </ul>
             </div>

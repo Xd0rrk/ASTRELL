@@ -414,18 +414,28 @@ export default function CreativeAgencyPage() {
             >
               Gallery
             </a>
+            <button
+              onClick={() => scrollTo('contact')}
+              className={cn(
+                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
+                activeSection === 'contact' ? 'text-white' : 'text-white/50 hover:text-white'
+              )}
+              id="btn-nav-contact"
+            >
+              Contact
+            </button>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
             <span className="text-[10px] font-mono text-white/40 tracking-wider uppercase">
-              🇬🇧 UK: {londonTime || '12:00:00'}
+              London — {londonTime || '12:00:00'}
             </span>
             <button
               onClick={() => scrollTo('contact')}
               className="bg-[#FF3E00] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-tight hover:bg-[#E03600] transition-all duration-300 hover:scale-105"
               id="btn-nav-cta"
             >
-              Start Project
+              Start a Project
             </button>
           </div>
 
@@ -455,50 +465,50 @@ export default function CreativeAgencyPage() {
                 onClick={() => scrollTo('expertise')}
                 className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
               >
-                01. Our Expertise
+                01 — Expertise
               </button>
               <button
                 onClick={() => scrollTo('proof')}
                 className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
               >
-                02. Proof & Case Studies
+                02 — Work
               </button>
               <button
                 onClick={() => scrollTo('process')}
                 className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
               >
-                03. Creative Process
+                03 — Process
               </button>
               <button
                 onClick={() => scrollTo('team')}
                 className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
               >
-                04. The Team of 5
+                04 — Team
               </button>
               <a
                 href="/gallery"
                 className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
               >
-                05. Gallery
+                05 — Gallery
               </a>
               <button
                 onClick={() => scrollTo('contact')}
                 className="text-3xl font-display font-bold text-left text-white underline decoration-neutral-700 underline-offset-8"
               >
-                06. Secure Partnership
+                06 — Contact
               </button>
             </div>
 
             <div className="border-t border-neutral-800 pt-6 space-y-4">
               <div className="flex justify-between text-xs font-mono text-neutral-400">
-                <span>LONDON HQ TIME</span>
+                <span>LONDON HQ — [Live Time]</span>
                 <span className="text-white">{londonTime}</span>
               </div>
               <button
                 onClick={() => scrollTo('contact')}
-                className="w-full bg-white text-black py-4 rounded-xl font-display font-bold text-sm tracking-wider uppercase text-center"
+                className="w-full bg-[#FF3E00] text-white py-4 rounded-xl font-display font-bold text-sm tracking-wider uppercase text-center"
               >
-                Begin Discovery Call
+                Start a Project
               </button>
             </div>
           </motion.div>
@@ -533,7 +543,7 @@ export default function CreativeAgencyPage() {
 
           <div className="absolute top-10 text-[9px] font-mono text-neutral-500 tracking-widest uppercase text-center flex items-center justify-center gap-1.5 opacity-60 pointer-events-none">
             <Move size={11} className="animate-bounce" />
-            Drag to Rotate Product
+            Drag to Rotate
           </div>
 
           {/* Realistic Dynamic Floor Shadow */}
@@ -685,7 +695,7 @@ export default function CreativeAgencyPage() {
               onClick={(e) => { e.stopPropagation(); setHeroRotX(-35); setHeroRotY(-30); }}
               className="px-2 py-0.5 font-bold text-[#FF3E00] rounded hover:bg-[#FF3E00]/10 transition-colors"
             >
-              Default View
+              Reset View
             </button>
           </div>
         </div>
@@ -696,19 +706,15 @@ export default function CreativeAgencyPage() {
         <div className="relative z-10 max-w-4xl xl:max-w-5xl space-y-10">
           <div className="inline-flex items-center gap-3 px-3.5 py-1.5 rounded-full bg-white/[0.04] border border-white/10 text-[#FF3E00] font-mono tracking-[0.2em] uppercase text-[11px] font-semibold backdrop-blur-md">
             <span className="w-2 h-2 rounded-full bg-[#FF3E00] animate-pulse"></span>
-            <span>England HQ • Global Remote Syndicate</span>
+            <span>England HQ · Working Across Europe & the Middle East</span>
           </div>
 
-          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[84px] leading-[0.95] font-black tracking-tight uppercase text-white">
-            WE SHAPE VISION INTO{' '}
-            <span className="font-cursive text-[#FF3E00] font-normal normal-case text-[0.88em] tracking-normal inline-block transform hover:scale-105 transition-transform duration-300">
-              extraordinary
-            </span>{' '}
-            DIGITAL POWER.
+          <h1 className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-[80px] leading-[0.98] font-black tracking-tight text-white">
+            Websites and brands built to turn visitors into customers.
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-sans font-normal leading-relaxed max-w-2xl">
-            We build high-performance websites, packaging, and digital systems designed to elevate brands and unlock exponential growth.
+            We design and build websites, brand identities, and packaging that make your business look — and perform — like a market leader.
           </p>
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-2">
@@ -717,31 +723,31 @@ export default function CreativeAgencyPage() {
               className="group bg-[#FF3E00] text-white hover:bg-[#E03600] px-8 py-4 rounded-full font-display font-bold text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center space-x-2 shadow-xl shadow-[#FF3E00]/20 hover:scale-[1.02]"
               id="btn-hero-cta"
             >
-              <span>Partner With Us</span>
+              <span>Start Your Project</span>
               <ArrowRight size={16} className="group-hover:translate-x-1.5 transition-transform" />
             </button>
-            <a
-              href="/gallery"
+            <button
+              onClick={() => scrollTo('proof')}
               className="group bg-transparent hover:bg-white/5 text-white px-8 py-4 rounded-full font-display font-medium text-sm tracking-wider uppercase border border-white/15 hover:border-white/30 transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-[1.02]"
               id="btn-hero-secondary"
             >
-              <span>Explore Gallery</span>
+              <span>See Our Work</span>
               <ArrowUpRight size={16} className="group-hover:rotate-45 transition-transform" />
-            </a>
+            </button>
           </div>
         </div>
 
         {/* Global location ticker */}
         <div className="border-y border-white/10 py-6 mt-16 md:mt-24 z-10">
           <div className="flex flex-wrap gap-y-3 justify-between items-center text-[10px] font-mono tracking-[0.3em] text-white/40 uppercase font-bold">
-            <span className="text-white">Active Collaboration Zones</span>
-            <span>United Kingdom (HQ)</span>
+            <span className="text-white">Currently Working With Clients In</span>
+            <span>United Kingdom</span>
             <span>•</span>
             <span>Western Europe</span>
             <span>•</span>
-            <span>Middle East (Amman)</span>
+            <span>Middle East</span>
             <span>•</span>
-            <span>Worldwide remote</span>
+            <span>Worldwide (Remote)</span>
           </div>
         </div>
       </section>
@@ -751,41 +757,41 @@ export default function CreativeAgencyPage() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
             <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">01 / Business Lift</span>
+              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">01 — Conversion Lift</span>
               <div>
                 <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">+180%</h3>
                 <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Average client organic digital conversion rate increase within 6 months post-launch.
+                  Average increase in client conversion rate within 6 months of launch.
                 </p>
               </div>
             </div>
 
             <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">02 / Commercial Impact</span>
+              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">02 — Revenue Unlocked</span>
               <div>
                 <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">€45M+</h3>
                 <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Client funding and sales revenue directly unlocked through our product layouts.
+                  Client funding and sales generated through our design and product work.
                 </p>
               </div>
             </div>
 
             <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">03 / Core Competency</span>
+              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">03 — On-Time Delivery</span>
               <div>
                 <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">100%</h3>
                 <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Seamless asynchronous delivery success using daily structured video and Figma syncs.
+                  Every project delivered on schedule, tracked through daily client check-ins.
                 </p>
               </div>
             </div>
 
             <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">04 / Client Trust</span>
+              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">04 — Client Satisfaction</span>
               <div>
                 <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">5.0 / 5</h3>
                 <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Active net promoter rating across global brand owners, marketing executives, and tech founders.
+                  Average rating across the founders, marketers, and brand owners we've worked with.
                 </p>
               </div>
             </div>
@@ -803,12 +809,11 @@ export default function CreativeAgencyPage() {
             <div className="lg:col-span-5">
               <div className="flex items-center gap-4 text-[#FF3E00] font-bold tracking-[0.2em] uppercase text-xs mb-8">
                 <div className="h-[1px] w-12 bg-[#FF3E00]"></div>
-                <span>Our Core Ideology</span>
+                <span>How We Work</span>
               </div>
-              <h2 className="font-display text-5xl md:text-7xl font-black tracking-tighter text-white uppercase leading-[0.9]">
-                The<br />
-                ASTRELL<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-600">Difference.</span>
+              <h2 className="font-display text-4xl md:text-6xl font-black tracking-tighter text-white uppercase leading-[0.9]">
+                Built different,<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">by design.</span>
               </h2>
             </div>
 
@@ -816,34 +821,34 @@ export default function CreativeAgencyPage() {
 
               {/* Point 1 */}
               <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white uppercase tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">01</span>
-                  Radical Simplicity
+                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
+                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">01 —</span>
+                  Less, but better.
                 </h3>
                 <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  We believe true sophistication lies in reduction. Our interfaces and physical products strip away the unnecessary, leaving only what drives engagement and pure aesthetic resonance.
+                  We strip away anything that doesn't earn its place — so your website and product feel effortless to use and impossible to ignore.
                 </p>
               </div>
 
               {/* Point 2 */}
               <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white uppercase tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">02</span>
-                  Creative Eminence
+                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
+                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">02 —</span>
+                  Nothing off-the-shelf.
                 </h3>
                 <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  We do not do templates. Every pixel, motion path, and layout is custom-engineered to win industry accolades and permanently elevate your brand above the noise of your competitors.
+                  Every layout, animation, and detail is designed around your brand. No templates, no shortcuts — just work built to make your competitors look generic.
                 </p>
               </div>
 
               {/* Point 3 */}
               <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white uppercase tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">03</span>
-                  Rigorous Precision
+                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
+                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">03 —</span>
+                  Design that's measured, not guessed.
                 </h3>
                 <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  Beneath the creative surface is a data-driven business methodology. We deliver on time, communicate transparently, and align every design decision with measurable commercial outcomes.
+                  Every decision is tied to a business outcome. You'll always know why something was built the way it was — and what it's doing for your numbers.
                 </p>
               </div>
 
@@ -868,14 +873,13 @@ export default function CreativeAgencyPage() {
             <div className="max-w-2xl">
               <div className="flex items-center gap-4 text-[#FF3E00] font-bold tracking-[0.2em] uppercase text-xs mb-3">
                 <div className="h-[1px] w-12 bg-[#FF3E00]"></div>
-                <span>The Creators Behind The Craft</span>
+                <span>The People You'll Actually Work With</span>
               </div>
               <h2 className="font-display text-4xl md:text-6xl font-black tracking-tighter text-white mt-3 mb-6 uppercase">
-                MEET THE <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">ASTRELL TEAM.</span>
+                Meet the <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">team behind your project.</span>
               </h2>
               <div className="text-lg text-neutral-400 font-light leading-relaxed space-y-4">
-                <p>We do not employ account executives, sales representatives, or middlemen.</p>
-                <p>You collaborate directly with five seasoned craftsmen who translate company goals into technical layouts.</p>
+                <p>No account managers, no middlemen. You work directly with the specialists who design, build, and ship your project.</p>
               </div>
             </div>
 
@@ -886,11 +890,10 @@ export default function CreativeAgencyPage() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
                 </span>
-                <span className="text-xs font-mono text-white font-bold">SYNDICATE SYNC STATUS</span>
+                <span className="text-xs font-mono text-white font-bold uppercase">Currently Online</span>
               </div>
-              <div className="text-[10px] font-mono text-neutral-400 max-w-[260px] leading-relaxed space-y-2">
-                <p>Our England workspace is currently in active coordination.</p>
-                <p>Daily client handoffs in progress for Europe & Middle East timelines.</p>
+              <div className="text-[10px] font-mono text-neutral-400 max-w-[260px] leading-relaxed">
+                <p>Our England-based team is actively coordinating handoffs across Europe and the Middle East today.</p>
               </div>
             </div>
           </div>
@@ -907,15 +910,14 @@ export default function CreativeAgencyPage() {
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-4 text-[#FF3E00] font-bold tracking-[0.2em] uppercase text-xs">
               <div className="h-[1px] w-12 bg-[#FF3E00]"></div>
-              <span>Global remote collaboration</span>
+              <span>How We Work Across Time Zones</span>
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-black tracking-tighter text-white leading-none uppercase">
-              REMOTE SYNDICATE. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">ENGLAND ROOTS.</span>
+              England-based. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">Built for global clients.</span>
             </h2>
-            <div className="text-lg text-neutral-400 font-light leading-relaxed space-y-4">
-              <p>Our core workshop resides in the historical design quarters of England.</p>
-              <p>We operate without borders, coordinating asynchronous alignment across European timelines and Middle East business centers.</p>
+            <div className="text-lg text-neutral-400 font-light leading-relaxed">
+              <p>Our team works from England, staying aligned with clients across Europe and the Middle East through daily structured check-ins — no matter where you are.</p>
             </div>
 
             <div className="space-y-4 pt-4">
@@ -924,9 +926,9 @@ export default function CreativeAgencyPage() {
                   <Check size={14} />
                 </div>
                 <div>
-                  <span className="font-display font-bold text-white text-base block">Zero Timeline Slip</span>
+                  <span className="font-display font-bold text-white text-base block">Always in sync</span>
                   <span className="text-sm text-neutral-400 font-light">
-                    We overlap directly with European CET and Gulf GST business hours to schedule instantaneous coordination.
+                    We overlap with European (CET) and Gulf (GST) business hours, so you're never waiting long for a reply.
                   </span>
                 </div>
               </div>
@@ -936,9 +938,9 @@ export default function CreativeAgencyPage() {
                   <Check size={14} />
                 </div>
                 <div>
-                  <span className="font-display font-bold text-white text-base block">Transparent Handoffs</span>
+                  <span className="font-display font-bold text-white text-base block">Full visibility</span>
                   <span className="text-sm text-neutral-400 font-light">
-                    Every design brief, raw CAD package, and web build is stored in a permanent dashboard accessible 24/7.
+                    Every brief, file, and build is stored in a shared dashboard you can access any time — no chasing status updates.
                   </span>
                 </div>
               </div>
@@ -957,7 +959,7 @@ export default function CreativeAgencyPage() {
               {/* London Time */}
               <div className="p-4 bg-neutral-950 rounded-xl border border-neutral-800 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">ASTRELL HQ — LONDON (BST/GMT)</span>
+                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">London (HQ) — BST/GMT</span>
                   <span className="font-display font-black text-xl text-white">United Kingdom</span>
                 </div>
                 <div className="text-right">
@@ -969,7 +971,7 @@ export default function CreativeAgencyPage() {
               {/* Central Europe Time */}
               <div className="p-4 bg-neutral-950/60 rounded-xl border border-neutral-850 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">EUROPE CLIENT TIME (CET/CEST)</span>
+                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">Europe — CET/CEST (+1 hour)</span>
                   <span className="font-display font-black text-lg text-neutral-300">Paris, Milan, Amsterdam</span>
                 </div>
                 <div className="text-right">
@@ -981,7 +983,7 @@ export default function CreativeAgencyPage() {
               {/* Gulf Time */}
               <div className="p-4 bg-neutral-950/60 rounded-xl border border-neutral-850 flex items-center justify-between">
                 <div>
-                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">MIDDLE EAST CLIENT TIME (GST)</span>
+                  <span className="text-[10px] font-mono text-neutral-500 block uppercase">Middle East — GST (+3 hours)</span>
                   <span className="font-display font-black text-lg text-neutral-300">Dubai, Abu Dhabi, Riyadh, Amman</span>
                 </div>
                 <div className="text-right">
@@ -993,7 +995,7 @@ export default function CreativeAgencyPage() {
             </div>
 
             <p className="text-xs text-neutral-500 font-mono text-center pt-2">
-              ● All worldwide clients receive custom asynchronous briefing videos recorded daily.
+              ● Clients worldwide receive a short video update after every milestone.
             </p>
           </div>
 
@@ -1007,29 +1009,28 @@ export default function CreativeAgencyPage() {
           <div className="lg:col-span-5 space-y-6">
             <div className="flex items-center gap-4 text-[#FF3E00] font-bold tracking-[0.2em] uppercase text-xs">
               <div className="h-[1px] w-12 bg-[#FF3E00]"></div>
-              <span>{"Let's Build Your Digital Legacy"}</span>
+              <span>Let's Build Something Great</span>
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-black tracking-tighter text-white leading-none uppercase">
-              BEGIN SECURE <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">PARTNERSHIP.</span>
+              Start your <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-white/40">project.</span>
             </h2>
-            <div className="text-lg text-neutral-400 font-light leading-relaxed space-y-4">
-              <p>We do not distribute template forms or push generic sales pitches.</p>
-              <p>Draft your custom creative brief here. Our lead developer and creative director will build an initial proposal within 48 hours.</p>
+            <div className="text-lg text-neutral-400 font-light leading-relaxed">
+              <p>Tell us about your business and what you're trying to achieve. We'll get back to you with a proposal within 48 hours.</p>
             </div>
 
             <div className="space-y-6 pt-4">
               <div className="flex items-center space-x-3 text-sm text-neutral-400 font-light">
                 <CheckCircle2 className="text-[#FF3E00] flex-shrink-0" size={20} />
-                <span>NDA protected discovery conversations by default.</span>
+                <span>Your conversation stays confidential, protected by NDA.</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-neutral-400 font-light">
                 <CheckCircle2 className="text-[#FF3E00] flex-shrink-0" size={20} />
-                <span>Transparent hourly/fixed budgets with absolute tracking.</span>
+                <span>Transparent pricing — fixed or hourly, always tracked.</span>
               </div>
               <div className="flex items-center space-x-3 text-sm text-neutral-400 font-light">
                 <CheckCircle2 className="text-[#FF3E00] flex-shrink-0" size={20} />
-                <span>Direct communication via Slack/Teams with the ASTRELL team.</span>
+                <span>Direct access to our team via Slack or Teams.</span>
               </div>
             </div>
 
@@ -1041,7 +1042,7 @@ export default function CreativeAgencyPage() {
                     <Briefcase size={14} className="text-[#FF3E00]" />
                     <span>YOUR ACTIVE BRIEF INQUIRIES ({inquiryHistory.length})</span>
                   </span>
-                  <span className="text-[8px] font-mono text-[#FF3E00] uppercase bg-black px-2 py-0.5 rounded border border-white/10">Saved Locally</span>
+                  <span className="text-[8px] font-mono text-[#FF3E00] uppercase bg-black px-2 py-0.5 rounded border border-white/10">Received</span>
                 </div>
 
                 <div className="space-y-3 max-h-[180px] overflow-y-auto pr-2">
@@ -1073,14 +1074,14 @@ export default function CreativeAgencyPage() {
 
           {/* DYNAMIC BRIEF BUILDER FORM */}
           <div className="lg:col-span-7 bg-white/5 backdrop-blur-md p-8 rounded-3xl border border-white/10 relative">
-            <h3 className="font-display font-black text-2xl text-white mb-6 tracking-tight uppercase">Interactive Brief Planner</h3>
+            <h3 className="font-display font-black text-2xl text-white mb-6 tracking-tight uppercase">Tell Us About Your Project</h3>
 
             <form onSubmit={handleSubmitBrief} className="space-y-6" id="form-brief-planner">
 
               {/* Name & Email Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Your Full Name *</label>
+                  <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Full Name *</label>
                   <input
                     type="text"
                     required
@@ -1093,7 +1094,7 @@ export default function CreativeAgencyPage() {
                 </div>
 
                 <div className="space-y-2">
-                  <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Your Email Address *</label>
+                  <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Email Address *</label>
                   <input
                     type="email"
                     required
@@ -1108,7 +1109,7 @@ export default function CreativeAgencyPage() {
 
               {/* Service selector */}
               <div className="space-y-3">
-                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Which Expertise Areas Do You Require?</label>
+                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">What do you need help with?</label>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                   {[
                     'Website Design',
@@ -1137,7 +1138,7 @@ export default function CreativeAgencyPage() {
 
               {/* Budget selector */}
               <div className="space-y-3">
-                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Estimated Project Budget Tier</label>
+                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Estimated Budget</label>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                   {['€5k - €10k', '€10k - €20k', '€20k - €50k', '€50k+'].map((tier) => (
                     <div
@@ -1159,12 +1160,12 @@ export default function CreativeAgencyPage() {
 
               {/* Project brief details */}
               <div className="space-y-2">
-                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Outline your objectives & challenges</label>
+                <label className="text-[10px] font-mono text-white/40 uppercase block font-bold tracking-widest">Tell us about your goals</label>
                 <textarea
                   rows={4}
                   value={briefText}
                   onChange={(e) => setBriefText(e.target.value)}
-                  placeholder="Outline key metrics you want to improve, manufacturing requirements, launch deadlines, or structural challenges..."
+                  placeholder="What are you trying to improve? Any deadlines, requirements, or challenges we should know about?"
                   className="w-full bg-black/40 border border-white/10 rounded-xl py-3 px-4 text-sm text-white focus:outline-none focus:border-[#FF3E00]/40 transition-all font-sans font-light resize-none"
                   id="textarea-brief-detail"
                 />
@@ -1177,7 +1178,7 @@ export default function CreativeAgencyPage() {
                 id="btn-submit-brief"
               >
                 <Send size={16} />
-                <span>Submit Secure Brief</span>
+                <span>Get My Proposal</span>
               </button>
 
             </form>
@@ -1201,15 +1202,15 @@ export default function CreativeAgencyPage() {
                     <div className="w-16 h-16 rounded-full bg-[#FF3E00] text-white flex items-center justify-center mx-auto text-2xl">
                       ✓
                     </div>
-                    <h4 className="font-display font-black text-2xl text-white">BRIEF TRANSMITTED SECURELY</h4>
+                    <h4 className="font-display font-black text-2xl text-white uppercase">Brief received.</h4>
                     <p className="text-sm text-neutral-400 font-light max-w-md mx-auto leading-relaxed">
-                      {"Thank you! Your strategic brief has been saved locally and logged to ASTRELL's coordination portal. Rand and Elena will schedule a review and follow up within 24 hours."}
+                      {"Thanks — your project brief has been sent to our team. Rand and Elena will review it and follow up within 24 hours."}
                     </p>
                     <button
                       onClick={() => setFormSubmitted(false)}
                       className="bg-[#FF3E00] text-white hover:bg-[#E03600] px-6 py-2.5 rounded-full font-mono text-xs uppercase transition-colors"
                     >
-                      Draft Another Brief
+                      Submit Another Brief
                     </button>
                   </motion.div>
                 </motion.div>

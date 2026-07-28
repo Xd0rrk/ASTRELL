@@ -9,150 +9,133 @@ ASTRELL.
 * Process
 * Team
 * Gallery
+* Contact
 
 ## Location Clock & CTA
-* UK Time: [Live UK Time]
-* Start Project
+* London — [Live Time]
+* Start a Project
 
 ## Mobile Navigation Drawer
-* 01. Our Expertise
-* 02. Proof & Case Studies
-* 03. Creative Process
-* 04. The Team of 5
-* 05. Gallery
-* 06. Secure Partnership
-* LONDON HQ TIME
-* Begin Discovery Call
+* 01 — Expertise
+* 02 — Work
+* 03 — Process
+* 04 — Team
+* 05 — Gallery
+* 06 — Contact
+* LONDON HQ — [Live Time]
+* Start a Project
 
 ---
 
 # Hero Section
 
 ## Location Badge
-England HQ • Global Remote Syndicate
+England HQ · Working Across Europe & the Middle East
 
 ## Heading
-WE SHAPE VISION INTO extraordinary DIGITAL POWER.
+Websites and brands built to turn visitors into customers.
 
 ## Description
-We build high-performance websites, packaging, and digital systems designed to elevate brands and unlock exponential growth.
+We design and build websites, brand identities, and packaging that make your business look — and perform — like a market leader.
 
 ## Primary Button (CTA)
-Partner With Us
+Start Your Project
 
 ## Secondary Button
-Explore Gallery
+See Our Work
 
 ## Interactive 3D Product Demo
-* Drag to Rotate Product
+* Drag to Rotate
 * View Presets:
   * Front
   * Top
   * Back
   * Bottom
-  * Default View
+  * Reset View
 
 ## Location Ticker
-* Active Collaboration Zones
-* United Kingdom (HQ)
+* Currently Working With Clients In
+* United Kingdom
 * Western Europe
-* Middle East (Amman)
-* Worldwide remote
+* Middle East
+* Worldwide (Remote)
 
 ---
 
 # Credibility & Stats Section (Proof of Quality)
 
-## Stat 1: Business Lift
-* Badge: 01 / Business Lift
+## Stat 1: Conversion Lift
+* Badge: 01 — Conversion Lift
 * Value: +180%
-* Description: Average client organic digital conversion rate increase within 6 months post-launch.
+* Description: Average increase in client conversion rate within 6 months of launch.
 
-## Stat 2: Commercial Impact
-* Badge: 02 / Commercial Impact
+## Stat 2: Revenue Unlocked
+* Badge: 02 — Revenue Unlocked
 * Value: €45M+
-* Description: Client funding and sales revenue directly unlocked through our product layouts.
+* Description: Client funding and sales generated through our design and product work.
 
-## Stat 3: Core Competency
-* Badge: 03 / Core Competency
+## Stat 3: On-Time Delivery
+* Badge: 03 — On-Time Delivery
 * Value: 100%
-* Description: Seamless asynchronous delivery success using daily structured video and Figma syncs.
+* Description: Every project delivered on schedule, tracked through daily client check-ins.
 
-## Stat 4: Client Trust
-* Badge: 04 / Client Trust
+## Stat 4: Client Satisfaction
+* Badge: 04 — Client Satisfaction
 * Value: 5.0 / 5
-* Description: Active net promoter rating across global brand owners, marketing executives, and tech founders.
+* Description: Average rating across the founders, marketers, and brand owners we've worked with.
 
 ---
 
 # Core Brand Ideology
 
 ## Section Label
-Our Core Ideology
+How We Work
 
 ## Heading
-The ASTRELL Difference.
+Built different, by design.
 
-## Point 01: Radical Simplicity
-We believe true sophistication lies in reduction. Our interfaces and physical products strip away the unnecessary, leaving only what drives engagement and pure aesthetic resonance.
+## Point 01: Less, but better.
+We strip away anything that doesn't earn its place — so your website and product feel effortless to use and impossible to ignore.
 
-## Point 02: Creative Eminence
-We do not do templates. Every pixel, motion path, and layout is custom-engineered to win industry accolades and permanently elevate your brand above the noise of your competitors.
+## Point 02: Nothing off-the-shelf.
+Every layout, animation, and detail is designed around your brand. No templates, no shortcuts — just work built to make your competitors look generic.
 
-## Point 03: Rigorous Precision
-Beneath the creative surface is a data-driven business methodology. We deliver on time, communicate transparently, and align every design decision with measurable commercial outcomes.
+## Point 03: Design that's measured, not guessed.
+Every decision is tied to a business outcome. You'll always know why something was built the way it was — and what it's doing for your numbers.
 
 ---
 
 # 3D Gallery Section
 
 ## Section Label
-Stellar 3D Orbit
+Explore Our Work In 3D
 
 ## Heading
-THE SHOWCASE GALAXY
+Step inside the gallery.
 
 ## Description & Instructions
-Drag to rotate orbit • Scroll to zoom • Click cards to inspect
-
-## Gallery Card Titles
-* Elegant Invitation
-* Modern Design
-* Vintage Style
-* Minimalist
-* Floral Design
-* Geometric
-* Luxury Gold
-* Rustic Style
-* Dark Modern
-* Colorful Party
-* Organic Forms
-* Minimal Architecture
-* Wilderness
-* Ethereal Valley
-* Primeval Forest
-* Sylvan Light
-* Aesthetic Sculpture
-* Sublime Mountain
-* Alpine Peaks
-* Vibrant Horizon
+A closer look at packaging, illustration, and spatial design work — rotate, zoom, and inspect each piece.
+Instructions: Drag to rotate · Scroll to zoom · Click any piece to inspect
 
 ## Card Inspection Modal
 * Button: Download
-* Button: Favorite (Heart)
+* Button: Save to Favorites
 
 ---
 
 # Selected Works & Proof of Quality (CozyWorksShowcase)
 
 ## Section Label
-SELECTED WORKS • 2025–2026
+Selected Work · 2025–2026
 
 ## Heading
-Crafted with quiet confidence & purpose.
+Work that pays for itself.
 
 ## Description
-A curated selection of digital products, brand identities, and spatial interfaces engineered to elevate industry standards.
+A look at the brands, products, and platforms we've helped launch — and the results they've delivered.
+
+## Verification Note (Section-level)
+All performance metrics are measured over the 90 days following launch.
 
 ## Category Filter Options
 * All Projects
@@ -162,240 +145,196 @@ A curated selection of digital products, brand identities, and spatial interface
 * Hardware
 
 ## Project 1: Maison de Aura
-* Category: Packaging & Digital Experience
-* Year: 2026
-* Location: Paris, France
-* Client: Aura Cosmetics
-* Description: A tactile, sustainable luxury skincare identity and high-conversion European e-commerce experience crafted with organic papercraft materials.
-* Metrics Badge: +240% Online Conversion
-* Tags: Brand Identity, Packaging Architecture, Next.js E-Commerce
-* Hover Button: Inspect Case Study
+* Category: Packaging & E-Commerce · Paris, France · 2026
+* Description: A sustainable, tactile packaging system and e-commerce build for a luxury skincare brand — designed to feel as premium unwrapped as it looks online.
+* Metrics Badge: +240% online conversion
+* Tags: Brand Identity, Packaging, Next.js E-Commerce
+* Hover Button: View Case Study
 
 ### Full Case Study Details (Modal):
-* Lead Role: Lead Brand Architecture & E-Commerce Engineering
+* Lead Role: Brand & E-Commerce Lead
 * Timeline: 12 Weeks
-* Audited Impact Metric: +240% Online Conversion (Verified post-launch performance measured across 90 days.)
-* Strategic Overview: We transformed Maison de Aura’s physical presence into an eco-conscious collector item, pairing tactile debossed papercraft containers with an instant-loading global web shop.
+* Strategic Overview: We rebuilt Maison de Aura's packaging in debossed, recyclable papercraft and paired it with an instant-loading online store — turning an everyday skincare purchase into a collectible unboxing.
 * Key Deliverables:
-  * Custom Package CAD Specs
+  * Packaging CAD & Specs
   * Sustainable Material Sourcing
-  * Global Web Storefront
+  * Online Storefront
   * Editorial Photography
 
 ## Project 2: Vertex Capital
-* Category: Institutional Interface Design
-* Year: 2026
-* Location: Zurich, Switzerland
-* Client: Vertex Group
-* Description: An elegant, dark-mode financial cockpit engineered for ultra-low latency transaction monitoring and institutional liquidity management.
-* Metrics Badge: €18M Capital Raised
-* Tags: Fintech Dashboard, Design System, Real-Time WebSockets
-* Hover Button: Inspect Case Study
+* Category: Institutional Interface Design · Zurich, Switzerland · 2026
+* Description: A dark-mode trading dashboard built for split-second decisions — engineered for speed, clarity, and institutional-grade reliability.
+* Metrics Badge: €18M capital raised
+* Tags: Fintech Dashboard, Design System, Real-Time Data
+* Hover Button: View Case Study
 
 ### Full Case Study Details (Modal):
-* Lead Role: UI/UX Architecture & Product Strategy
+* Lead Role: UI/UX & Product Strategy
 * Timeline: 16 Weeks
-* Audited Impact Metric: €18M Capital Raised (Verified post-launch performance measured across 90 days.)
-* Strategic Overview: Designed a high-density financial cockpit that simplifies complex market data feeds into a fluid, keyboard-navigable dark interface.
+* Strategic Overview: We turned dense, fast-moving market data into a fluid, keyboard-first interface that traders can navigate without looking away from the numbers.
 * Key Deliverables:
-  * Design System Tokens
-  * Real-Time Data Viz
-  * Keyboard Shortcuts Pipeline
-  * Dark Mode Theme Engine
+  * Design System
+  * Real-Time Data Visualization
+  * Keyboard Navigation
+  * Dark Mode Interface
 
 ## Project 3: Chrono Orbital
-* Category: 3D Spatial & Identity
-* Year: 2025
-* Location: Tokyo, Japan
-* Client: Chrono Aerospace
-* Description: An immersive digital habitat capsule simulator and brand design system celebrating commercial zero-gravity architectural habitats.
-* Metrics Badge: 3.4M Engagements
+* Category: 3D Spatial & Identity · Tokyo, Japan · 2025
+* Description: A brand identity and interactive 3D simulator built to bring commercial space habitats to life for investors and enthusiasts alike.
+* Metrics Badge: 3.4M engagements
 * Tags: 3D WebGL, Aerospace Branding, Spatial Design
-* Hover Button: Inspect Case Study
+* Hover Button: View Case Study
 
 ### Full Case Study Details (Modal):
-* Lead Role: Creative Direction & 3D Interactive Design
+* Lead Role: Creative Direction & 3D Design
 * Timeline: 14 Weeks
-* Audited Impact Metric: 3.4M Engagements (Verified post-launch performance measured across 90 days.)
-* Strategic Overview: Developed an interactive 3D WebGL simulator giving investors and aerospace enthusiasts an authentic look inside commercial space capsule modules.
+* Strategic Overview: We built a WebGL simulator that lets people step inside a zero-gravity habitat module — turning a hard-to-picture concept into something investors could explore for themselves.
 * Key Deliverables:
-  * Interactive 3D WebGL Explorer
-  * Brand Guidelines Handbook
-  * Spatial Telemetry UI
-  * Investor Deck System
+  * 3D WebGL Explorer
+  * Brand Guidelines
+  * Spatial UI
+  * Investor Deck
 
 ## Project 4: Lumina Spatial Audio
-* Category: Hardware & Mobile App
-* Year: 2025
-* Location: London, UK
-* Client: Lumina Acoustics
-* Description: Tactile industrial design accents, anodized aluminum hardware aesthetics, and a companion iOS soundstage equalizer application.
-* Metrics Badge: 45,000 Units Sold Out
-* Tags: Industrial Aesthetics, iOS Companion App, Soundstage Design
-* Hover Button: Inspect Case Study
+* Category: Hardware & Mobile App · London, UK · 2025
+* Description: Industrial design and a companion iOS app for a flagship pair of spatial headphones — built to sell out on day one.
+* Metrics Badge: 45,000 units sold out
+* Tags: Industrial Design, iOS App, Soundstage UI
+* Hover Button: View Case Study
 
 ### Full Case Study Details (Modal):
-* Lead Role: Hardware Aesthetics & Companion Software UI
+* Lead Role: Hardware & Software Design
 * Timeline: 20 Weeks
-* Audited Impact Metric: 45,000 Units Sold Out (Verified post-launch performance measured across 90 days.)
-* Strategic Overview: Engineered a cohesive physical and digital ecosystem for Lumina’s flagship spatial headphones, resulting in an immediate pre-order sellout.
+* Strategic Overview: We designed the anodized aluminum hardware and the equalizer app that controls it as one cohesive product — and pre-orders sold out within days.
 * Key Deliverables:
-  * Hardware Aesthetic Specs
-  * iOS Equalizer Interface
-  * Tactile Soundstage UI
-  * E-Commerce Launch Portal
+  * Hardware Design Specs
+  * iOS Equalizer App
+  * Soundstage Interface
+  * Launch Store
 
-## Modal Footer CTA Banner
-* Heading: Envisioning similar caliber results for your brand?
-* Subtitle: Direct partner access • Guaranteed launch timeline • Fixed agency fee
-* Button: Start A Project Inquiry
+## Modal / Section Footer CTA Banner
+* Heading: Want results like these for your brand?
+* Subtitle: Direct access to your team · Fixed timeline · Fixed fee
+* Button: Start a Project Inquiry
 
 ---
 
 # Systematic Alignment & Methodology
 
 ## Section Label
-METHODOLOGY & ALIGNMENT
+How We Work Together
 
 ## Heading
-SYSTEMATIC ALIGNMENT.
+A clear process, from day one to launch.
 
 ## Description
-Zero mysterious design "magic." We enforce commercial credibility through strict timelines, visual milestones, and transparent execution.
+No black boxes. You'll always know what's happening, what's next, and why.
 
-## Phase 01: DISCOVERY
-* Subtitle: QUANTITATIVE AUDIT & SCOPE
-* Timeline: WEEKS 1–2
-* Focus: Commercial & Market Blueprint
-* Summary: We unpack your business metrics, competitive advantages, and conversion bottlenecks to build a tight commercial strategy.
-* Key Deliverable: KPI Objective Brief
-* Phase Guarantee: 100% Scope Precision
-* Visual Label: LIVE VISUALIZATION
+## Phase 01: Discovery (Weeks 1–2)
+* Focus: Understanding your business
+* Summary: We start with your numbers, your customers, and what's holding growth back — so every decision after this is built on real insight, not guesswork.
+* Key Deliverable: Strategy & Goals Brief
 
-## Phase 02: BLUEPRINT
-* Subtitle: INTERACTIVE GRID DIRECTIONS
-* Timeline: WEEKS 3–5
-* Focus: UI Geometry & Design Systems
-* Summary: We craft distinct interactive design routes, experimenting with responsive typography, color theory, and motion.
-* Key Deliverable: Interactive Figma Prototype
-* Phase Guarantee: 3 Distinct Routes
-* Visual Label: LIVE VISUALIZATION
+## Phase 02: Blueprint (Weeks 3–5)
+* Focus: Designing the experience
+* Summary: We design multiple distinct directions — exploring layout, typography, color, and motion — so you choose the one that's right, not the only one you've seen.
+* Key Deliverable: Interactive Prototype · 3 Design Directions
 
-## Phase 03: EXECUTION
-* Subtitle: SURGICAL CRAFT & DEVELOPMENT
-* Timeline: WEEKS 6–8
-* Focus: Next.js & Motion Engineering
-* Summary: We convert locked designs into high-performance code, fine-tuning smooth animations, responsive grids, and speed.
-* Key Deliverable: Staging Environment Access
-* Phase Guarantee: 98+ Lighthouse Rating
-* Visual Label: LIVE VISUALIZATION
+## Phase 03: Execution (Weeks 6–8)
+* Focus: Building it for real
+* Summary: Approved designs become fast, responsive, production-ready code — tested for performance every step of the way.
+* Key Deliverable: Live Staging Site · 98+ Lighthouse Score
 
-## Phase 04: LAUNCH
-* Subtitle: DEPLOYMENT & SOCIAL ASSETS
-* Timeline: WEEKS 9–10
-* Focus: Global Infrastructure & Handoff
-* Summary: We deploy your platform live, hand over full source code and design tokens, and launch high-impact social marketing assets.
-* Key Deliverable: Production System & Asset Package
-* Phase Guarantee: Zero Downtime
-* Visual Label: LIVE VISUALIZATION
+## Phase 04: Launch (Weeks 9–10)
+* Focus: Going live
+* Summary: We deploy your platform, hand over full source files and brand assets, and launch your marketing materials alongside it.
+* Key Deliverable: Full Handoff Package · Zero-Downtime Launch
 
 ## Bottom CTA Banner
-* Heading: READY TO ALIGN YOUR NEXT PROJECT?
-* Subtitle: Schedule a 15-minute scoping call to map your commercial timeline.
-* Button: Book Alignment Call
+* Heading: Ready to start your project?
+* Subtitle: Book a free 15-minute call — we'll map your timeline before you commit to anything.
+* Button: Book a Free Call
 
 ---
 
 # Meet the ASTRELL Team
 
 ## Section Label
-The Creators Behind The Craft
+The People You'll Actually Work With
 
 ## Heading
-MEET THE ASTRELL TEAM.
+Meet the team behind your project.
 
 ## Description
-We do not employ account executives, sales representatives, or middlemen. You collaborate directly with five seasoned craftsmen who translate company goals into technical layouts.
+No account managers, no middlemen. You work directly with the specialists who design, build, and ship your project.
 
-## Syndicate Sync Status
-* Status Title: SYNDICATE SYNC STATUS
-* Status Description:
-  * Our England workspace is currently in active coordination.
-  * Daily client handoffs in progress for Europe & Middle East timelines.
+## Status Widget
+* Title: Currently Online
+* Description: Our England-based team is actively coordinating handoffs across Europe and the Middle East today.
 
 ## Team Members
-* Rand Khaled — CREATIVE DIRECTOR & BRAND LEAD
-* Elena Varga — LEAD WEB ARCHITECT
-* Julian Cross — PACKAGING SPECIALIST
-* Nadia Al-Mansoor — 3D VISUAL DESIGNER
-* Simon A-A — SYSTEM ENGINEER
+* Rand Khaled — Creative Director & Brand Lead
+* Elena Varga — Lead Web Architect
+* Julian Cross — Packaging Specialist
+* Nadia Al-Mansoor — 3D Visual Designer
+* Simon A-A — Systems Engineer
 
 ---
 
 # Remote Syndicate / England HQ
 
 ## Section Label
-Global remote collaboration
+How We Work Across Time Zones
 
 ## Heading
-REMOTE SYNDICATE. ENGLAND ROOTS.
+England-based. Built for global clients.
 
 ## Description
-Our core workshop resides in the historical design quarters of England. We operate without borders, coordinating asynchronous alignment across European timelines and Middle East business centers.
+Our team works from England, staying aligned with clients across Europe and the Middle East through daily structured check-ins — no matter where you are.
 
 ## Value Points
-* Zero Timeline Slip: We overlap directly with European CET and Gulf GST business hours to schedule instantaneous coordination.
-* Transparent Handoffs: Every design brief, raw CAD package, and web build is stored in a permanent dashboard accessible 24/7.
+* Always in sync: We overlap with European (CET) and Gulf (GST) business hours, so you're never waiting long for a reply.
+* Full visibility: Every brief, file, and build is stored in a shared dashboard you can access any time — no chasing status updates.
 
 ## Workspace Timeline Coordinates
-* ASTRELL HQ — LONDON (BST/GMT): United Kingdom | CURRENT BASE TIME
-* EUROPE CLIENT TIME (CET/CEST): Paris, Milan, Amsterdam | HQ +1 HOUR OVERLAP
-* MIDDLE EAST CLIENT TIME (GST): Dubai, Abu Dhabi, Riyadh, Amman | HQ +3 HOURS OVERLAP
-* Asynchronous Note: ● All worldwide clients receive custom asynchronous briefing videos recorded daily.
+* London (HQ) — BST/GMT
+* Europe — CET/CEST (+1 hour)
+* Middle East — GST (+3 hours) — Dubai, Abu Dhabi, Riyadh, Amman
+* Note: Clients worldwide receive a short video update after every milestone.
 
 ---
 
 # Secure Partnership & Project Planner
 
 ## Section Label
-Let's Build Your Digital Legacy
+Let's Build Something Great
 
 ## Heading
-BEGIN SECURE PARTNERSHIP.
+Start your project.
 
 ## Description
-We do not distribute template forms or push generic sales pitches. Draft your custom creative brief here. Our lead developer and creative director will build an initial proposal within 48 hours.
+Tell us about your business and what you're trying to achieve. We'll get back to you with a proposal within 48 hours.
 
 ## Partnership Guarantees
-* NDA protected discovery conversations by default.
-* Transparent hourly/fixed budgets with absolute tracking.
-* Direct communication via Slack/Teams with the ASTRELL team.
+* Your conversation stays confidential, protected by NDA.
+* Transparent pricing — fixed or hourly, always tracked.
+* Direct access to our team via Slack or Teams.
 
 ## Form Title
-Interactive Brief Planner
+Tell Us About Your Project
 
 ## Form Fields & Placeholders
-* Full Name Field Label: Your Full Name *
-  * Placeholder: e.g. Jean-Luc Piccard
-* Email Address Field Label: Your Email Address *
-  * Placeholder: e.g. jeanluc@enterprise.eu
-* Expertise Areas Label: Which Expertise Areas Do You Require?
-  * Option 1: Website Design
-  * Option 2: Branding & Identity
-  * Option 3: Packaging Design
-* Project Budget Tier Label: Estimated Project Budget Tier
-  * Option 1: €5k - €10k
-  * Option 2: €10k - €20k
-  * Option 3: €20k - €50k
-  * Option 4: €50k+
-* Objectives & Challenges Label: Outline your objectives & challenges
-  * Placeholder: Outline key metrics you want to improve, manufacturing requirements, launch deadlines, or structural challenges...
-* Submit Button: Submit Secure Brief
+* Full Name * — e.g. Jean-Luc Piccard
+* Email Address * — e.g. jeanluc@enterprise.eu
+* What do you need help with? — Website Design / Branding & Identity / Packaging Design
+* Estimated Budget — €5k–10k / €10k–20k / €20k–50k / €50k+
+* Tell us about your goals — What are you trying to improve? Any deadlines, requirements, or challenges we should know about?
+* Submit Button: Get My Proposal
 
 ## Submission Overlay / Success Feedback
-* Success Title: BRIEF TRANSMITTED SECURELY
-* Success Message: Thank you! Your strategic brief has been saved locally and logged to ASTRELL's coordination portal. Rand and Elena will schedule a review and follow up within 24 hours.
-* Action Button: Draft Another Brief
+* Success Title: Brief received.
+* Success Message: Thanks — your project brief has been sent to our team. Rand and Elena will review it and follow up within 24 hours.
+* Action Button: Submit Another Brief
 
 ---
 
@@ -403,22 +342,22 @@ Interactive Brief Planner
 
 ## Brand Column
 * Brand Name: ASTRELL.
-* Description: We engineer digital legacies. Premium website design, branding, and digital solutions for clients worldwide.
+* Description: A creative studio building websites, brands, and digital products designed to grow your business.
 
 ## Navigation Column
 * Column Header: Navigation
 * Links:
   * Work
-  * Services
-  * Methodology
+  * Expertise
+  * Process
   * Team
   * Contact
 
 ## Offices Column
 * Column Header: Offices
-* London, UK (HQ / BST)
-* Paris, FR (CET)
-* Dubai, UAE (GST)
+* London, UK (HQ)
+* Paris, FR
+* Dubai, UAE
 
 ## Contact Column
 * Column Header: Contact
