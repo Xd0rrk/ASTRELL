@@ -1,0 +1,529 @@
+'use client';
+
+import React, { useState, useRef } from 'react';
+import { motion, AnimatePresence, useScroll, useTransform, useMotionValue, useSpring } from 'motion/react';
+import { ArrowUpRight, X, ArrowRight, Sparkles } from 'lucide-react';
+
+interface WorkItem {
+  id: string;
+  title: string;
+  category: string;
+  year: string;
+  location: string;
+  client: string;
+  description: string;
+  image: string;
+  aspectRatio: string;
+  tags: string[];
+  metrics: string;
+  fullDetails?: {
+    role: string;
+    timeline: string;
+    overview: string;
+    deliverables: string[];
+    gallery: string[];
+  };
+}
+
+const WORKS: WorkItem[] = [
+  {
+    id: 'work-aura',
+    title: 'Maison de Aura',
+    category: 'Packaging & Digital Experience',
+    year: '2026',
+    location: 'Paris, France',
+    client: 'Aura Cosmetics',
+    description: 'A tactile, sustainable luxury skincare identity and high-conversion European e-commerce experience crafted with organic papercraft materials.',
+    image: 'https://picsum.photos/seed/skincare/1200/900',
+    aspectRatio: 'aspect-[4/3]',
+    tags: ['Brand Identity', 'Packaging Architecture', 'Next.js E-Commerce'],
+    metrics: '+240% Online Conversion',
+    fullDetails: {
+      role: 'Lead Brand Architecture & E-Commerce Engineering',
+      timeline: '12 Weeks',
+      overview: 'We transformed Maison de Aura’s physical presence into an eco-conscious collector item, pairing tactile debossed papercraft containers with an instant-loading global web shop.',
+      deliverables: ['Custom Package CAD Specs', 'Sustainable Material Sourcing', 'Global Web Storefront', 'Editorial Photography'],
+      gallery: [
+        'https://picsum.photos/seed/skincare1/1000/750',
+        'https://picsum.photos/seed/skincare2/1000/750'
+      ]
+    }
+  },
+  {
+    id: 'work-vertex',
+    title: 'Vertex Capital',
+    category: 'Institutional Interface Design',
+    year: '2026',
+    location: 'Zurich, Switzerland',
+    client: 'Vertex Group',
+    description: 'An elegant, dark-mode financial cockpit engineered for ultra-low latency transaction monitoring and institutional liquidity management.',
+    image: 'https://picsum.photos/seed/webui/1200/900',
+    aspectRatio: 'aspect-[16/10]',
+    tags: ['Fintech Dashboard', 'Design System', 'Real-Time WebSockets'],
+    metrics: '€18M Capital Raised',
+    fullDetails: {
+      role: 'UI/UX Architecture & Product Strategy',
+      timeline: '16 Weeks',
+      overview: 'Designed a high-density financial cockpit that simplifies complex market data feeds into a fluid, keyboard-navigable dark interface.',
+      deliverables: ['Design System System Tokens', 'Real-Time Data Viz', 'Keyboard Shortcuts Pipeline', 'Dark Mode Theme Engine'],
+      gallery: [
+        'https://picsum.photos/seed/webui1/1000/750',
+        'https://picsum.photos/seed/webui2/1000/750'
+      ]
+    }
+  },
+  {
+    id: 'work-chrono',
+    title: 'Chrono Orbital',
+    category: '3D Spatial & Identity',
+    year: '2025',
+    location: 'Tokyo, Japan',
+    client: 'Chrono Aerospace',
+    description: 'An immersive digital habitat capsule simulator and brand design system celebrating commercial zero-gravity architectural habitats.',
+    image: 'https://picsum.photos/seed/spatial/1200/900',
+    aspectRatio: 'aspect-[4/3]',
+    tags: ['3D WebGL', 'Aerospace Branding', 'Spatial Design'],
+    metrics: '3.4M Engagements',
+    fullDetails: {
+      role: 'Creative Direction & 3D Interactive Design',
+      timeline: '14 Weeks',
+      overview: 'Developed an interactive 3D WebGL simulator giving investors and aerospace enthusiasts an authentic look inside commercial space capsule modules.',
+      deliverables: ['Interactive 3D WebGL Explorer', 'Brand Guidelines Handbook', 'Spatial Telemetry UI', 'Investor Deck System'],
+      gallery: [
+        'https://picsum.photos/seed/spatial1/1000/750',
+        'https://picsum.photos/seed/spatial2/1000/750'
+      ]
+    }
+  },
+  {
+    id: 'work-lumina',
+    title: 'Lumina Spatial Audio',
+    category: 'Hardware & Mobile App',
+    year: '2025',
+    location: 'London, UK',
+    client: 'Lumina Acoustics',
+    description: 'Tactile industrial design accents, anodized aluminum hardware aesthetics, and a companion iOS soundstage equalizer application.',
+    image: 'https://picsum.photos/seed/audio/1200/900',
+    aspectRatio: 'aspect-[16/10]',
+    tags: ['Industrial Aesthetics', 'iOS Companion App', 'Soundstage Design'],
+    metrics: '45,000 Units Sold Out',
+    fullDetails: {
+      role: 'Hardware Aesthetics & Companion Software UI',
+      timeline: '20 Weeks',
+      overview: 'Engineered a cohesive physical and digital ecosystem for Lumina’s flagship spatial headphones, resulting in an immediate pre-order sellout.',
+      deliverables: ['Hardware Aesthetic Specs', 'iOS Equalizer Interface', 'Tactile Soundstage UI', 'E-Commerce Launch Portal'],
+      gallery: [
+        'https://picsum.photos/seed/audio1/1000/750',
+        'https://picsum.photos/seed/audio2/1000/750'
+      ]
+    }
+  }
+];
+
+// Single Parallax Card Component with Mouse Pan & Zoom
+function ParallaxWorkCard({ 
+  item, 
+  index, 
+  onSelect 
+}: { 
+  item: WorkItem; 
+  index: number; 
+  onSelect: (item: WorkItem) => void;
+}) {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const cardImageRef = useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  // Scroll Progress relative to card position
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start']
+  });
+
+  // Parallax Y offset for inner image shift on scroll
+  const imageY = useTransform(scrollYProgress, [0, 1], ['-6%', '6%']);
+  const scrollScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.12, 1.05, 1.12]);
+
+  // Interactive mouse pan motion values
+  const rawMouseX = useMotionValue(0);
+  const rawMouseY = useMotionValue(0);
+
+  // Smooth springs for silky fluid panning
+  const springConfig = { damping: 20, stiffness: 120, mass: 0.5 };
+  const panX = useSpring(rawMouseX, springConfig);
+  const panY = useSpring(rawMouseY, springConfig);
+
+  // Mouse movement handler relative to image frame center
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!cardImageRef.current) return;
+    const rect = cardImageRef.current.getBoundingClientRect();
+    const relativeX = (e.clientX - rect.left) / rect.width - 0.5; // -0.5 to +0.5
+    const relativeY = (e.clientY - rect.top) / rect.height - 0.5; // -0.5 to +0.5
+    
+    // Pan image opposite to cursor position (-20px to +20px) for organic optical depth
+    rawMouseX.set(relativeX * -20);
+    rawMouseY.set(relativeY * -20);
+  };
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    rawMouseX.set(0);
+    rawMouseY.set(0);
+  };
+
+  // Alternating entry directions: Even items come from left (-80px), Odd items come from right (+80px)
+  const isEven = index % 2 === 0;
+  const initialX = isEven ? -80 : 80;
+
+  return (
+    <motion.div
+      ref={containerRef}
+      initial={{ opacity: 0, x: initialX, y: 30 }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: (index % 2) * 0.1 }}
+      onClick={() => onSelect(item)}
+      className="group cursor-pointer space-y-4"
+      id={`card-cozy-work-${item.id}`}
+    >
+      {/* Image Frame with Smooth Scroll & Mouse Pan-Zoom Parallax */}
+      <div 
+        ref={cardImageRef}
+        onMouseMove={handleMouseMove}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={`relative w-full ${item.aspectRatio} rounded-2xl overflow-hidden bg-neutral-900 border border-white/10 group-hover:border-white/30 transition-colors duration-500`}
+      >
+        <motion.img
+          src={item.image}
+          alt={item.title}
+          style={{ y: imageY, x: panX, scale: scrollScale }}
+          animate={{
+            scale: isHovered ? 1.18 : 1.08,
+          }}
+          transition={{
+            scale: { duration: 0.6, ease: [0.16, 1, 0.3, 1] }
+          }}
+          className="w-full h-full object-cover origin-center"
+          referrerPolicy="no-referrer"
+        />
+        
+        {/* Subtle Hover Overlay */}
+        <div className="absolute inset-0 bg-black/35 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <motion.div 
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-6 py-3 rounded-full bg-white text-black font-mono text-xs uppercase tracking-wider font-bold shadow-2xl backdrop-blur-md flex items-center gap-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+          >
+            <span>Inspect Case Study</span>
+            <ArrowUpRight size={14} />
+          </motion.div>
+        </div>
+
+        {/* Location Pill */}
+        <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/10 text-[10px] font-mono uppercase tracking-wider text-neutral-300">
+          {item.location}
+        </div>
+
+        {/* Metric Badge */}
+        <div className="absolute bottom-4 right-4 px-3.5 py-1.5 rounded-full bg-black/70 backdrop-blur-md border border-emerald-500/30 text-[10px] font-mono uppercase tracking-wider text-emerald-400 font-bold shadow-lg">
+          {item.metrics}
+        </div>
+      </div>
+
+      {/* Info Content - Minimalist Typography */}
+      <div className="space-y-1 pt-1">
+        <div className="flex items-center justify-between text-xs font-mono text-neutral-400 uppercase tracking-widest">
+          <span>{item.category}</span>
+          <span className="text-neutral-500">{item.year}</span>
+        </div>
+
+        <div className="flex items-center justify-between gap-4">
+          <h3 className="text-2xl sm:text-3xl font-display font-medium text-white group-hover:text-[#FF3E00] transition-colors duration-300">
+            {item.title}
+          </h3>
+          <div className="w-8 h-8 rounded-full border border-white/10 flex items-center justify-center text-white/50 group-hover:text-white group-hover:border-white/30 group-hover:bg-white/10 transition-all flex-shrink-0">
+            <ArrowUpRight size={14} />
+          </div>
+        </div>
+      </div>
+
+    </motion.div>
+  );
+}
+
+export default function CozyWorksShowcase() {
+  const [activeItem, setActiveItem] = useState<WorkItem | null>(null);
+  const [activeFilter, setActiveFilter] = useState<string>('all');
+
+  const filteredWorks = activeFilter === 'all'
+    ? WORKS
+    : WORKS.filter(w => w.category.toLowerCase().includes(activeFilter.toLowerCase()));
+
+  const scrollToContact = () => {
+    const el = document.getElementById('contact');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section className="py-32 md:py-44 bg-[#0A0A0C] text-white border-t border-b border-white/10 relative font-sans overflow-hidden" id="proof">
+      
+      <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 space-y-24">
+        
+        {/* ================= ELEGANT SECTION HEADER ================= */}
+        <motion.div 
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7 }}
+          className="flex flex-col md:flex-row md:items-end justify-between gap-10 border-b border-white/10 pb-12"
+        >
+          
+          <div className="max-w-2xl space-y-4">
+            <span className="text-xs font-mono uppercase tracking-[0.3em] text-[#FF3E00] font-semibold block">
+              SELECTED WORKS • 2025–2026
+            </span>
+
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-display font-light text-white tracking-tight leading-[1.08]">
+              Crafted with <span className="font-serif italic font-normal text-neutral-300">quiet confidence</span> & purpose.
+            </h2>
+
+            <p className="text-neutral-400 text-base md:text-lg font-light leading-relaxed pt-2">
+              A curated selection of digital products, brand identities, and spatial interfaces engineered to elevate industry standards.
+            </p>
+          </div>
+
+          {/* Clean Category Filter */}
+          <div className="flex flex-wrap items-center gap-3">
+            {[
+              { id: 'all', label: 'All Projects' },
+              { id: 'packaging', label: 'Packaging' },
+              { id: 'interface', label: 'Interfaces' },
+              { id: '3d', label: '3D Spatial' },
+              { id: 'hardware', label: 'Hardware' }
+            ].map((tab) => (
+              <button
+                key={tab.id}
+                onClick={() => setActiveFilter(tab.id)}
+                className={`text-xs font-mono tracking-widest uppercase transition-all duration-300 px-4 py-2 rounded-full border ${
+                  activeFilter === tab.id
+                    ? 'bg-white text-black font-semibold border-white shadow-md'
+                    : 'bg-transparent text-neutral-400 border-white/10 hover:border-white/30 hover:text-white'
+                }`}
+                id={`work-filter-${tab.id}`}
+              >
+                {tab.label}
+              </button>
+            ))}
+          </div>
+
+        </motion.div>
+
+        {/* ================= PARALLAX ALTERNATING PROJECT SHOWCASE ================= */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24 items-start">
+          {filteredWorks.map((item, idx) => (
+            <ParallaxWorkCard 
+              key={item.id}
+              item={item}
+              index={idx}
+              onSelect={(selected) => setActiveItem(selected)}
+            />
+          ))}
+        </div>
+
+        {/* ================= HIGH-CRAFT CASE STUDY MODAL OVERLAY ================= */}
+        <AnimatePresence>
+          {activeItem && activeItem.fullDetails && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 md:p-10 overflow-y-auto">
+              
+              {/* Dark Ambient Backdrop */}
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                onClick={() => setActiveItem(null)}
+                className="fixed inset-0 bg-black/90 backdrop-blur-xl"
+              />
+
+              {/* Editorial Modal Card */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95, y: 30 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.95, y: 30 }}
+                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                className="relative w-full max-w-5xl max-h-[90vh] overflow-y-auto rounded-3xl bg-[#0E0E12] border border-white/20 text-white shadow-[0_0_80px_rgba(0,0,0,0.8)] z-10 font-sans custom-scrollbar"
+                id="modal-cozy-work-detail"
+              >
+                
+                {/* Sticky Header Bar */}
+                <div className="sticky top-0 z-20 flex items-center justify-between px-6 sm:px-10 py-5 bg-[#0E0E12]/80 backdrop-blur-md border-b border-white/10">
+                  <div className="flex items-center gap-3 text-xs font-mono text-neutral-400">
+                    <span className="text-[#FF3E00] font-semibold uppercase tracking-wider">{activeItem.category}</span>
+                    <span>/</span>
+                    <span className="text-white font-medium">{activeItem.client}</span>
+                  </div>
+
+                  <button
+                    onClick={() => setActiveItem(null)}
+                    className="flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all text-xs font-mono uppercase tracking-wider font-semibold"
+                    id="btn-close-cozy-modal"
+                  >
+                    <span>Close</span>
+                    <X size={15} />
+                  </button>
+                </div>
+
+                <div className="p-6 sm:p-10 md:p-12 space-y-12">
+                  
+                  {/* Hero Title & Big Metric Row */}
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                    <div className="lg:col-span-2 space-y-4">
+                      <div className="flex items-center gap-3 text-xs font-mono uppercase tracking-widest text-neutral-400">
+                        <span>{activeItem.location}</span>
+                        <span>•</span>
+                        <span>{activeItem.year}</span>
+                      </div>
+                      <h3 className="text-4xl sm:text-5xl md:text-6xl font-display font-light text-white tracking-tight leading-[1.05]">
+                        {activeItem.title}
+                      </h3>
+                      <p className="text-neutral-300 text-base sm:text-lg font-light leading-relaxed">
+                        {activeItem.description}
+                      </p>
+                    </div>
+
+                    {/* Audited Impact Metric Box */}
+                    <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-950/40 via-neutral-900/60 to-black border border-emerald-500/30 space-y-2 relative overflow-hidden">
+                      <div className="flex items-center gap-2 text-emerald-400 text-xs font-mono uppercase tracking-widest font-semibold">
+                        <Sparkles size={14} />
+                        <span>Audited Impact Metric</span>
+                      </div>
+                      <div className="text-3xl sm:text-4xl font-display font-bold text-white tracking-tight">
+                        {activeItem.metrics}
+                      </div>
+                      <p className="text-xs text-neutral-400 font-light pt-1">
+                        Verified post-launch performance measured across 90 days.
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Main Hero Showcase Image */}
+                  <div className="relative w-full aspect-[16/9] sm:aspect-[21/9] rounded-2xl overflow-hidden border border-white/10 bg-neutral-900 group">
+                    <img
+                      src={activeItem.image}
+                      alt={activeItem.title}
+                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                      referrerPolicy="no-referrer"
+                    />
+                  </div>
+
+                  {/* Meta Specs Grid (Role, Timeline, Scope) */}
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/10">
+                    <div>
+                      <div className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest mb-1">CLIENT</div>
+                      <div className="text-sm font-medium text-white">{activeItem.client}</div>
+                    </div>
+                    <div>
+                      <div className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest mb-1">TIMELINE</div>
+                      <div className="text-sm font-medium text-white">{activeItem.fullDetails.timeline}</div>
+                    </div>
+                    <div>
+                      <div className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest mb-1">LOCATION</div>
+                      <div className="text-sm font-medium text-white">{activeItem.location}</div>
+                    </div>
+                    <div>
+                      <div className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest mb-1">LEAD ROLE</div>
+                      <div className="text-sm font-medium text-white">{activeItem.fullDetails.role}</div>
+                    </div>
+                  </div>
+
+                  {/* Overview Deep Dive */}
+                  <div className="space-y-4 max-w-3xl">
+                    <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-[#FF3E00] font-semibold">
+                      STRATEGIC ARCHITECTURE & OVERVIEW
+                    </h4>
+                    <p className="text-neutral-200 text-base sm:text-xl font-serif font-light italic leading-relaxed">
+                      &ldquo;{activeItem.fullDetails.overview}&rdquo;
+                    </p>
+                  </div>
+
+                  {/* Additional Gallery Angle Shots */}
+                  {activeItem.fullDetails.gallery && activeItem.fullDetails.gallery.length > 0 && (
+                    <div className="space-y-4">
+                      <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 font-semibold">
+                        VISUAL PROOF & DETAIL GALLERY
+                      </h4>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        {activeItem.fullDetails.gallery.map((imgUrl, i) => (
+                          <div key={i} className="relative aspect-[4/3] rounded-2xl overflow-hidden border border-white/10 bg-neutral-900">
+                            <img 
+                              src={imgUrl} 
+                              alt={`${activeItem.title} view ${i + 1}`}
+                              className="w-full h-full object-cover" 
+                              referrerPolicy="no-referrer"
+                            />
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {/* Key Deliverables & Tech Architecture */}
+                  <div className="space-y-4 pt-4 border-t border-white/10">
+                    <h4 className="text-xs font-mono uppercase tracking-[0.2em] text-neutral-400 font-semibold">
+                      KEY DELIVERABLES & TECHNICAL SCOPE
+                    </h4>
+                    <div className="flex flex-wrap gap-3">
+                      {activeItem.fullDetails.deliverables.map((del) => (
+                        <div 
+                          key={del} 
+                          className="px-4 py-2.5 rounded-xl bg-white/[0.04] border border-white/15 text-xs sm:text-sm font-sans text-neutral-200 flex items-center gap-2.5"
+                        >
+                          <span className="w-2 h-2 rounded-full bg-[#FF3E00]" />
+                          <span>{del}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Bottom Action CTA Banner */}
+                  <div className="p-8 rounded-2xl bg-gradient-to-r from-neutral-900 via-[#16161D] to-neutral-900 border border-white/15 flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div className="space-y-1 text-center md:text-left">
+                      <div className="text-lg sm:text-xl font-display font-medium text-white">
+                        Envisioning similar caliber results for your brand?
+                      </div>
+                      <p className="text-xs font-mono text-neutral-400">
+                        Direct partner access • Guaranteed launch timeline • Fixed agency fee
+                      </p>
+                    </div>
+
+                    <button
+                      onClick={() => {
+                        setActiveItem(null);
+                        scrollToContact();
+                      }}
+                      className="w-full md:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-full bg-white text-black font-mono font-bold text-xs uppercase tracking-wider hover:bg-neutral-200 transition-all shadow-xl hover:scale-105 flex-shrink-0"
+                      id="btn-cozy-modal-inquire"
+                    >
+                      <span>Start A Project Inquiry</span>
+                      <ArrowRight size={14} />
+                    </button>
+                  </div>
+
+                </div>
+
+              </motion.div>
+            </div>
+          )}
+        </AnimatePresence>
+
+      </div>
+    </section>
+  );
+}
+
