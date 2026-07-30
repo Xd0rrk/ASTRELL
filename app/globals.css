@@ -1,9 +1,8 @@
 @import "tailwindcss";
-@import "tw-animate-css";
 
 @theme {
-  --font-sans: var(--font-sans), sans-serif;
-  --font-display: var(--font-display), sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-display: var(--font-space-grotesk), system-ui, sans-serif;
   --font-cursive: 'Great Vibes', cursive;
   --font-accent-serif: 'Cormorant Garamond', serif;
 

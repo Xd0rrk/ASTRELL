@@ -753,48 +753,147 @@ export default function CreativeAgencyPage() {
       </section>
 
       {/* CREDIBILITY & STATS SECTION (Proof of Quality) */}
-      <section className="bg-[#0A0A0A] py-28 md:py-36 px-8 border-b border-white/5" id="credibility-stats">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10">
-            <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">01 — Conversion Lift</span>
-              <div>
-                <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">+180%</h3>
-                <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Average increase in client conversion rate within 6 months of launch.
-                </p>
+      <section className="bg-[#0A0A0A] py-20 sm:py-28 md:py-36 px-4 sm:px-8 border-b border-white/5 relative overflow-hidden" id="credibility-stats">
+        <div className="max-w-7xl mx-auto relative z-10">
+          {/* Bento Grid Layout on Mobile & iPad (< lg), 4-Cols on Desktop (lg:) */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 md:gap-6 lg:gap-8">
+
+            {/* Card 01 - Conversion Lift (Bento Featured Card on Mobile) */}
+            <div className="col-span-2 sm:col-span-1 lg:col-span-1 relative group overflow-hidden p-5 sm:p-7 lg:p-9 bg-neutral-900/40 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 flex flex-col justify-between hover:border-[#FF3E00]/40 group-active:border-[#FF3E00]/60 transition-all duration-500 shadow-2xl min-h-[220px] sm:min-h-[280px] lg:min-h-[320px] touch-manipulation select-none active:scale-[0.98]">
+              {/* Background Image with Edge-to-Edge Zoom & Blur Effect */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img
+                  src="/stats/conversion-lift.png"
+                  alt="Conversion Lift background"
+                  className="w-full h-full object-cover object-center opacity-45 group-hover:opacity-80 group-active:opacity-90 scale-105 group-hover:scale-120 group-active:scale-125 blur-[1px] group-hover:blur-0 group-active:blur-0 transition-all duration-700 ease-out transform-gpu"
+                />
+                {/* Black Opacity Layer (30%) */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 group-active:bg-black/15 transition-colors duration-500" />
+                {/* Soft Light Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-neutral-950/40" />
+                {/* Subtle Ambient Accent Glow */}
+                <div className="absolute -inset-full bg-gradient-to-br from-[#FF3E00]/20 via-transparent to-purple-600/15 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-700 blur-xl" />
+              </div>
+
+              {/* Card Content */}
+              <div className="relative z-10 flex flex-col justify-between h-full space-y-4 sm:space-y-6 lg:space-y-8">
+                <span className="text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#FF3E00] uppercase font-bold flex items-center gap-1.5 sm:gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF3E00] group-hover:scale-150 group-active:scale-150 transition-transform" />
+                  01 — Conversion Lift
+                </span>
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tighter text-white group-hover:text-[#FF3E00] group-active:text-[#FF3E00] transition-colors duration-300">
+                    +180%
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/80 leading-snug sm:leading-relaxed font-sans font-light group-hover:text-white group-active:text-white transition-colors duration-300">
+                    Average increase in client conversion rate within 6 months of launch.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">02 — Revenue Unlocked</span>
-              <div>
-                <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">€45M+</h3>
-                <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Client funding and sales generated through our design and product work.
-                </p>
+            {/* Card 02 - Revenue Unlocked */}
+            <div className="col-span-1 relative group overflow-hidden p-5 sm:p-7 lg:p-9 bg-neutral-900/40 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 flex flex-col justify-between hover:border-[#FF3E00]/40 group-active:border-[#FF3E00]/60 transition-all duration-500 shadow-2xl min-h-[220px] sm:min-h-[280px] lg:min-h-[320px] touch-manipulation select-none active:scale-[0.98]">
+              {/* Background Image with Edge-to-Edge Zoom & Blur Effect */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img
+                  src="/stats/revenue-unlocked.png"
+                  alt="Revenue Unlocked background"
+                  className="w-full h-full object-cover object-center opacity-45 group-hover:opacity-80 group-active:opacity-90 scale-105 group-hover:scale-120 group-active:scale-125 blur-[1px] group-hover:blur-0 group-active:blur-0 transition-all duration-700 ease-out transform-gpu"
+                />
+                {/* Black Opacity Layer (30%) */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 group-active:bg-black/15 transition-colors duration-500" />
+                {/* Soft Light Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-neutral-950/40" />
+                {/* Subtle Ambient Accent Glow */}
+                <div className="absolute -inset-full bg-gradient-to-br from-amber-500/20 via-transparent to-[#FF3E00]/15 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-700 blur-xl" />
+              </div>
+
+              {/* Card Content */}
+              <div className="relative z-10 flex flex-col justify-between h-full space-y-4 sm:space-y-6 lg:space-y-8">
+                <span className="text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#FF3E00] uppercase font-bold flex items-center gap-1.5 sm:gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF3E00] group-hover:scale-150 group-active:scale-150 transition-transform" />
+                  02 — Revenue Unlocked
+                </span>
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black tracking-tighter text-white group-hover:text-[#FF3E00] group-active:text-[#FF3E00] transition-colors duration-300">
+                    €45M+
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/80 leading-snug sm:leading-relaxed font-sans font-light group-hover:text-white group-active:text-white transition-colors duration-300">
+                    Client funding and sales generated through our design.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">03 — On-Time Delivery</span>
-              <div>
-                <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">100%</h3>
-                <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Every project delivered on schedule, tracked through daily client check-ins.
-                </p>
+            {/* Card 03 - On-Time Delivery */}
+            <div className="col-span-1 relative group overflow-hidden p-5 sm:p-7 lg:p-9 bg-neutral-900/40 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 flex flex-col justify-between hover:border-[#FF3E00]/40 group-active:border-[#FF3E00]/60 transition-all duration-500 shadow-2xl min-h-[220px] sm:min-h-[280px] lg:min-h-[320px] touch-manipulation select-none active:scale-[0.98]">
+              {/* Background Image with Edge-to-Edge Zoom & Blur Effect */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img
+                  src="/stats/ontime-delivery.jpg"
+                  alt="On-Time Delivery background"
+                  className="w-full h-full object-cover object-center opacity-45 group-hover:opacity-80 group-active:opacity-90 scale-105 group-hover:scale-120 group-active:scale-125 blur-[1px] group-hover:blur-0 group-active:blur-0 transition-all duration-700 ease-out transform-gpu"
+                />
+                {/* Black Opacity Layer (30%) */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 group-active:bg-black/15 transition-colors duration-500" />
+                {/* Soft Light Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-neutral-950/40" />
+                {/* Subtle Ambient Accent Glow */}
+                <div className="absolute -inset-full bg-gradient-to-br from-emerald-500/20 via-transparent to-[#FF3E00]/15 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-700 blur-xl" />
+              </div>
+
+              {/* Card Content */}
+              <div className="relative z-10 flex flex-col justify-between h-full space-y-4 sm:space-y-6 lg:space-y-8">
+                <span className="text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#FF3E00] uppercase font-bold flex items-center gap-1.5 sm:gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF3E00] group-hover:scale-150 group-active:scale-150 transition-transform" />
+                  03 — On-Time Delivery
+                </span>
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="text-3xl sm:text-5xl lg:text-6xl font-display font-black tracking-tighter text-white group-hover:text-[#FF3E00] group-active:text-[#FF3E00] transition-colors duration-300">
+                    100%
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/80 leading-snug sm:leading-relaxed font-sans font-light group-hover:text-white group-active:text-white transition-colors duration-300">
+                    Every project delivered on schedule, tracked daily.
+                  </p>
+                </div>
               </div>
             </div>
 
-            <div className="p-10 bg-white/5 backdrop-blur-md rounded-3xl border border-white/10 flex flex-col justify-between space-y-6 group hover:border-[#FF3E00]/30 transition-all duration-300">
-              <span className="text-xs font-mono tracking-widest text-[#FF3E00] uppercase font-bold">04 — Client Satisfaction</span>
-              <div>
-                <h3 className="text-5xl md:text-6xl font-display font-black tracking-tighter text-white mb-2 group-hover:text-[#FF3E00] transition-colors duration-300">5.0 / 5</h3>
-                <p className="text-sm text-white/60 leading-relaxed font-sans font-light">
-                  Average rating across the founders, marketers, and brand owners we've worked with.
-                </p>
+            {/* Card 04 - Client Satisfaction (Bento Featured Card on Mobile) */}
+            <div className="col-span-2 sm:col-span-1 lg:col-span-1 relative group overflow-hidden p-5 sm:p-7 lg:p-9 bg-neutral-900/40 backdrop-blur-xl rounded-2xl sm:rounded-3xl border border-white/10 flex flex-col justify-between hover:border-[#FF3E00]/40 group-active:border-[#FF3E00]/60 transition-all duration-500 shadow-2xl min-h-[220px] sm:min-h-[280px] lg:min-h-[320px] touch-manipulation select-none active:scale-[0.98]">
+              {/* Background Image with Edge-to-Edge Zoom & Blur Effect */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
+                <img
+                  src="/stats/client-satisfaction.jpg"
+                  alt="Client Satisfaction background"
+                  className="w-full h-full object-cover object-center opacity-45 group-hover:opacity-80 group-active:opacity-90 scale-105 group-hover:scale-120 group-active:scale-125 blur-[1px] group-hover:blur-0 group-active:blur-0 transition-all duration-700 ease-out transform-gpu"
+                />
+                {/* Black Opacity Layer (30%) */}
+                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 group-active:bg-black/15 transition-colors duration-500" />
+                {/* Soft Light Vignette Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-neutral-950/80 via-transparent to-neutral-950/40" />
+                {/* Subtle Ambient Accent Glow */}
+                <div className="absolute -inset-full bg-gradient-to-br from-blue-500/20 via-transparent to-[#FF3E00]/15 opacity-0 group-hover:opacity-100 group-active:opacity-100 transition-opacity duration-700 blur-xl" />
+              </div>
+
+              {/* Card Content */}
+              <div className="relative z-10 flex flex-col justify-between h-full space-y-4 sm:space-y-6 lg:space-y-8">
+                <span className="text-[10px] sm:text-xs font-mono tracking-wider sm:tracking-widest text-[#FF3E00] uppercase font-bold flex items-center gap-1.5 sm:gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#FF3E00] group-hover:scale-150 group-active:scale-150 transition-transform" />
+                  04 — Client Satisfaction
+                </span>
+                <div className="space-y-1 sm:space-y-2">
+                  <h3 className="text-4xl sm:text-5xl lg:text-6xl font-display font-black tracking-tighter text-white group-hover:text-[#FF3E00] group-active:text-[#FF3E00] transition-colors duration-300">
+                    5.0 / 5
+                  </h3>
+                  <p className="text-xs sm:text-sm text-white/80 leading-snug sm:leading-relaxed font-sans font-light group-hover:text-white group-active:text-white transition-colors duration-300">
+                    Average rating across founders, marketers, and brand owners.
+                  </p>
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </section>
