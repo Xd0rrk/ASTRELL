@@ -49,6 +49,8 @@ import CozyWorksShowcase from '@/components/CozyWorksShowcase';
 import TeamShowcase from '@/components/ui/team-showcase';
 import MethodologySection from '@/components/MethodologySection';
 import Footer from '@/components/Footer';
+import SmartNavbar from '@/components/SmartNavbar';
+import IdeologySection from '@/components/IdeologySection';
 
 const StellarCardGallerySingle = dynamic(
   () => import('@/components/ui/3d-image-gallery'),
@@ -79,9 +81,7 @@ function ThreeDGallery() {
 
 export default function CreativeAgencyPage() {
   // Navigation states
-  const [activeSection, setActiveSection] = React.useState('hero');
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-
+    
   // Time conversion state for London, Europe, and Middle East
   const [londonTime, setLondonTime] = React.useState('');
   const [cetTime, setCetTime] = React.useState('');
@@ -339,181 +339,13 @@ export default function CreativeAgencyPage() {
     ? caseStudies
     : caseStudies.filter(cs => cs.category === portfolioFilter);
 
-  // Smooth scroll helper
-  const scrollTo = (id: string) => {
-    setActiveSection(id);
-    setMobileMenuOpen(false);
-    const el = document.getElementById(id);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  };
-
+  
   return (
     <div className="relative min-h-screen bg-neutral-950 text-neutral-100 selection:bg-neutral-800 overflow-x-hidden">
 
-      {/* GLASSMORPHIC NAVIGATION BAR */}
-      <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl h-16 bg-white/5 backdrop-blur-md border border-white/10 rounded-full flex items-center justify-between px-8 transition-all duration-300">
-        <div className="w-full flex items-center justify-between">
-          <div
-            onClick={() => scrollTo('hero')}
-            className="flex items-center space-x-2 cursor-pointer group"
-            id="nav-logo"
-          >
-            <div className="text-lg font-black tracking-tighter text-white flex items-center">
-              ASTRELL<span className="text-[#FF3E00] text-xl font-black ml-0.5">.</span>
-            </div>
-          </div>
+      
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollTo('expertise')}
-              className={cn(
-                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
-                activeSection === 'expertise' ? 'text-white' : 'text-white/50 hover:text-white'
-              )}
-              id="btn-nav-expertise"
-            >
-              Expertise
-            </button>
-            <button
-              onClick={() => scrollTo('proof')}
-              className={cn(
-                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
-                activeSection === 'proof' ? 'text-white' : 'text-white/50 hover:text-white'
-              )}
-              id="btn-nav-proof"
-            >
-              Work
-            </button>
-            <button
-              onClick={() => scrollTo('process')}
-              className={cn(
-                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
-                activeSection === 'process' ? 'text-white' : 'text-white/50 hover:text-white'
-              )}
-              id="btn-nav-process"
-            >
-              Process
-            </button>
-            <button
-              onClick={() => scrollTo('team')}
-              className={cn(
-                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
-                activeSection === 'team' ? 'text-white' : 'text-white/50 hover:text-white'
-              )}
-              id="btn-nav-team"
-            >
-              Team
-            </button>
-            <a
-              href="/gallery"
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white/50 hover:text-white"
-              id="btn-nav-gallery"
-            >
-              Gallery
-            </a>
-            <button
-              onClick={() => scrollTo('contact')}
-              className={cn(
-                "text-xs font-bold uppercase tracking-widest transition-all duration-200",
-                activeSection === 'contact' ? 'text-white' : 'text-white/50 hover:text-white'
-              )}
-              id="btn-nav-contact"
-            >
-              Contact
-            </button>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-4">
-            <span className="text-[10px] font-mono text-white/40 tracking-wider uppercase">
-              London — {londonTime || '12:00:00'}
-            </span>
-            <button
-              onClick={() => scrollTo('contact')}
-              className="bg-[#FF3E00] text-white px-6 py-2 rounded-full text-xs font-bold uppercase tracking-tight hover:bg-[#E03600] transition-all duration-300 hover:scale-105"
-              id="btn-nav-cta"
-            >
-              Start a Project
-            </button>
-          </div>
-
-          {/* Mobile menu trigger */}
-          <button
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 text-neutral-400 hover:text-white"
-            id="btn-mobile-menu-toggle"
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-      </nav>
-
-      {/* MOBILE NAV DRAWER */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-neutral-950 pt-24 px-6 md:hidden flex flex-col justify-between pb-10"
-            id="mobile-drawer"
-          >
-            <div className="space-y-6 flex flex-col pt-8">
-              <button
-                onClick={() => scrollTo('expertise')}
-                className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
-              >
-                01 — Expertise
-              </button>
-              <button
-                onClick={() => scrollTo('proof')}
-                className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
-              >
-                02 — Work
-              </button>
-              <button
-                onClick={() => scrollTo('process')}
-                className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
-              >
-                03 — Process
-              </button>
-              <button
-                onClick={() => scrollTo('team')}
-                className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
-              >
-                04 — Team
-              </button>
-              <a
-                href="/gallery"
-                className="text-3xl font-display font-bold text-left text-neutral-200 hover:text-white"
-              >
-                05 — Gallery
-              </a>
-              <button
-                onClick={() => scrollTo('contact')}
-                className="text-3xl font-display font-bold text-left text-white underline decoration-neutral-700 underline-offset-8"
-              >
-                06 — Contact
-              </button>
-            </div>
-
-            <div className="border-t border-neutral-800 pt-6 space-y-4">
-              <div className="flex justify-between text-xs font-mono text-neutral-400">
-                <span>LONDON HQ — [Live Time]</span>
-                <span className="text-white">{londonTime}</span>
-              </div>
-              <button
-                onClick={() => scrollTo('contact')}
-                className="w-full bg-[#FF3E00] text-white py-4 rounded-xl font-display font-bold text-sm tracking-wider uppercase text-center"
-              >
-                Start a Project
-              </button>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      <SmartNavbar />
 
       {/* HERO SECTION WITH INTERACTIVE 3D ORB */}
       <section
@@ -719,7 +551,7 @@ export default function CreativeAgencyPage() {
 
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-2">
             <button
-              onClick={() => scrollTo('contact')}
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
               className="group bg-[#FF3E00] text-white hover:bg-[#E03600] px-8 py-4 rounded-full font-display font-bold text-sm tracking-wider uppercase transition-all duration-300 flex items-center justify-center space-x-2 shadow-xl shadow-[#FF3E00]/20 hover:scale-[1.02]"
               id="btn-hero-cta"
             >
@@ -727,7 +559,7 @@ export default function CreativeAgencyPage() {
               <ArrowRight size={16} className="group-hover:translate-x-1.5 transition-transform" />
             </button>
             <button
-              onClick={() => scrollTo('proof')}
+              onClick={() => document.getElementById('proof')?.scrollIntoView({ behavior: 'smooth' })}
               className="group bg-transparent hover:bg-white/5 text-white px-8 py-4 rounded-full font-display font-medium text-sm tracking-wider uppercase border border-white/15 hover:border-white/30 transition-all duration-300 flex items-center justify-center space-x-2 hover:scale-[1.02]"
               id="btn-hero-secondary"
             >
@@ -899,62 +731,7 @@ export default function CreativeAgencyPage() {
       </section>
 
       {/* CORE BRAND IDEOLOGY - MINIMALIST MANIFESTO */}
-      <section className="py-32 md:py-48 px-8 bg-neutral-950 relative overflow-hidden" id="expertise">
-        {/* Subtle background gradient glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#FF3E00]/5 rounded-full blur-[120px] pointer-events-none" />
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-8">
-            <div className="lg:col-span-5">
-              <div className="flex items-center gap-4 text-[#FF3E00] font-bold tracking-[0.2em] uppercase text-xs mb-8">
-                <div className="h-[1px] w-12 bg-[#FF3E00]"></div>
-                <span>How We Work</span>
-              </div>
-              <h2 className="font-display text-4xl md:text-6xl font-black tracking-tighter text-white uppercase leading-[0.9]">
-                Built different,<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-neutral-500">by design.</span>
-              </h2>
-            </div>
-
-            <div className="lg:col-span-7 flex flex-col justify-center gap-12 md:gap-20">
-
-              {/* Point 1 */}
-              <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">01 —</span>
-                  Less, but better.
-                </h3>
-                <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  We strip away anything that doesn't earn its place — so your website and product feel effortless to use and impossible to ignore.
-                </p>
-              </div>
-
-              {/* Point 2 */}
-              <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">02 —</span>
-                  Nothing off-the-shelf.
-                </h3>
-                <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  Every layout, animation, and detail is designed around your brand. No templates, no shortcuts — just work built to make your competitors look generic.
-                </p>
-              </div>
-
-              {/* Point 3 */}
-              <div className="group border-t border-white/10 pt-8 transition-colors hover:border-[#FF3E00]/50">
-                <h3 className="font-display text-2xl md:text-3xl font-black text-white tracking-tight mb-4 flex items-center gap-4">
-                  <span className="text-[#FF3E00] text-sm tracking-widest font-mono">03 —</span>
-                  Design that's measured, not guessed.
-                </h3>
-                <p className="text-neutral-400 text-lg md:text-xl font-light leading-relaxed max-w-xl">
-                  Every decision is tied to a business outcome. You'll always know why something was built the way it was — and what it's doing for your numbers.
-                </p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
+      <IdeologySection />
 
       {/* 3D GALLERY SECTION */}
       <ThreeDGallery />

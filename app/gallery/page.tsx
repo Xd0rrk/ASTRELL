@@ -10,6 +10,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/lib/utils';
+import SmartNavbar from '@/components/SmartNavbar';
 import { GridBody, DraggableContainer, GridItem } from "@/components/ui/infinite-drag-scroll";
 
 interface PortfolioItem {
@@ -226,8 +227,7 @@ const portfolioImages: PortfolioItem[] = [
 ];
 
 export default function GalleryPage() {
-  const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
-  const [londonTime, setLondonTime] = React.useState('');
+    const [londonTime, setLondonTime] = React.useState('');
   const [activeCategory, setActiveCategory] = React.useState<string>('all');
   const [activeVariant, setActiveVariant] = React.useState<'polaroid' | 'masonry' | 'default'>('polaroid');
   const [selectedItem, setSelectedItem] = React.useState<PortfolioItem | null>(null);
@@ -272,135 +272,9 @@ export default function GalleryPage() {
   return (
     <div className="relative h-screen w-screen bg-neutral-950 text-neutral-100 selection:bg-neutral-800 overflow-hidden font-sans select-none">
       
-      {/* TOP FLOATING NAVIGATION BAR */}
-      <nav className="fixed top-4 md:top-6 left-1/2 -translate-x-1/2 z-50 w-[92%] sm:w-[95%] max-w-6xl h-14 md:h-16 bg-black/40 backdrop-blur-xl border border-white/10 rounded-full flex items-center justify-between px-5 md:px-8 transition-all duration-300 shadow-2xl">
-        <div className="w-full flex items-center justify-between">
-          <a 
-            href="/"
-            className="flex items-center space-x-2 cursor-pointer group"
-            id="gallery-logo"
-          >
-            <div className="text-base md:text-lg font-black tracking-tighter text-white flex items-center">
-              ASTRELL<span className="text-[#FF3E00] text-lg md:text-xl font-black ml-0.5">.</span>
-            </div>
-          </a>
+      <SmartNavbar />
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-7">
-            <a 
-              href="/#expertise" 
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white/50 hover:text-white"
-            >
-              Expertise
-            </a>
-            <a 
-              href="/#proof" 
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white/50 hover:text-white"
-            >
-              Work
-            </a>
-            <a 
-              href="/#process" 
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white/50 hover:text-white"
-            >
-              Process
-            </a>
-            <a 
-              href="/#team" 
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white/50 hover:text-white"
-            >
-              Team
-            </a>
-            <a 
-              href="/gallery"
-              className="text-xs font-bold uppercase tracking-widest transition-all duration-200 text-white border-b border-[#FF3E00] pb-0.5"
-            >
-              Gallery
-            </a>
-          </div>
-
-          <div className="hidden md:flex items-center space-x-4">
-            <span className="text-[10px] font-mono text-white/40 tracking-wider uppercase">
-              🇬🇧 UK: {londonTime || '12:00:00'}
-            </span>
-            <a 
-              href="/#contact"
-              className="bg-[#FF3E00] text-white px-5 py-2 rounded-full text-xs font-bold uppercase tracking-tight hover:bg-[#E03600] transition-all duration-300 hover:scale-105 shadow-lg shadow-[#FF3E00]/20"
-            >
-              Start Project
-            </a>
-          </div>
-
-          {/* Mobile Menu Toggle Button */}
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-            className="md:hidden p-2 text-neutral-400 hover:text-white transition-colors"
-            aria-label="Toggle Navigation Menu"
-          >
-            {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
-          </button>
-        </div>
-      </nav>
-
-      {/* MOBILE NAVIGATION DRAWER */}
-      <AnimatePresence>
-        {mobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-0 z-40 bg-neutral-950/95 backdrop-blur-2xl pt-24 px-6 md:hidden flex flex-col justify-between pb-10"
-          >
-            <div className="space-y-6 flex flex-col pt-8">
-              <a 
-                href="/#expertise" 
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-neutral-300 hover:text-white"
-              >
-                01. Our Expertise
-              </a>
-              <a 
-                href="/#proof" 
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-neutral-300 hover:text-white"
-              >
-                02. Proof & Case Studies
-              </a>
-              <a 
-                href="/#process" 
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-neutral-300 hover:text-white"
-              >
-                03. Creative Process
-              </a>
-              <a 
-                href="/#team" 
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-neutral-300 hover:text-white"
-              >
-                04. The Team of 5
-              </a>
-              <a 
-                href="/gallery"
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-white flex items-center justify-between"
-              >
-                <span>05. Portfolio Gallery</span>
-                <span className="text-[10px] bg-[#FF3E00] text-white px-2.5 py-0.5 rounded-full uppercase tracking-wider font-mono">Active</span>
-              </a>
-              <a 
-                href="/#contact" 
-                className="text-2xl sm:text-3xl font-display font-bold text-left text-white underline decoration-[#FF3E00] underline-offset-8 mt-4"
-              >
-                06. Secure Partnership
-              </a>
-            </div>
-            
-            <div className="flex flex-col space-y-4">
-              <div className="h-[1px] w-full bg-white/10" />
-              <div className="flex justify-between items-center text-xs font-mono text-neutral-400 uppercase tracking-widest">
-                <span>London Time:</span>
-                <span>{londonTime}</span>
-              </div>
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      
 
       {/* FLOATING MINIMALIST CONTROL TOOLBAR (Category Filter & Layout Variants) */}
       <div className="absolute bottom-4 sm:bottom-6 left-1/2 -translate-x-1/2 z-40 w-[92%] sm:w-[88%] max-w-3xl bg-black/60 backdrop-blur-2xl border border-white/15 rounded-full p-1.5 sm:p-2 flex items-center justify-between shadow-2xl space-x-2">
