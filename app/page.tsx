@@ -102,16 +102,18 @@ export default function CreativeAgencyPage() {
   // Smooth continuous auto-rotation that runs by default, pauses during user drag, and resumes after
   React.useEffect(() => {
     if (!isDraggingHero) {
-      const spin = () => {
+      // By wrapping the state update in a single rAF and adding heroRotY as a dependency,
+      // we only queue the next frame AFTER React has successfully rendered the current one.
+      // This prevents the high-priority animation loop from starving the React transition queue,
+      // which was causing navigation to other pages (like /blog) to freeze.
+      heroSpinRef.current = requestAnimationFrame(() => {
         setHeroRotY(prev => (prev + 0.3) % 360);
-        heroSpinRef.current = requestAnimationFrame(spin);
-      };
-      heroSpinRef.current = requestAnimationFrame(spin);
+      });
     }
     return () => {
       if (heroSpinRef.current) cancelAnimationFrame(heroSpinRef.current);
     };
-  }, [isDraggingHero]);
+  }, [isDraggingHero, heroRotY]);
   const heroDragStartPos = React.useRef({ x: 0, y: 0 });
   const heroDragStartRot = React.useRef({ x: -35, y: -30 });
 

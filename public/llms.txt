@@ -1,0 +1,44 @@
+# ASTRELL — llms.txt
+
+> ASTRELL is an England-based premium creative agency serving clients worldwide. Specialising in brand identity, website design, packaging, digital marketing, and 18 integrated creative services.
+
+## Key Pages
+
+- [Homepage](https://astrells.com): Main website — overview of ASTRELL's services, portfolio, team, and contact form.
+- [Services](https://astrells.com/services): Full list of 18 creative services including brand identity, website design, packaging, SEO, and more.
+- [Blog](https://astrells.com/blog): Insights on branding, design, digital marketing, and creative strategy.
+
+## Services
+
+- [Brand Identity](https://astrells.com/services/brand-identity): Distinctive brand identity design from strategy to visual systems.
+- [Logo Design](https://astrells.com/services/logo-design): Versatile logos built to work across every medium.
+- [Rebranding](https://astrells.com/services/rebranding): Strategic rebranding for established businesses.
+- [Website Design](https://astrells.com/services/website-design): High-converting website design with premium aesthetics.
+- [Website Development](https://astrells.com/services/website-development): Modern web development with Next.js and React.
+- [UI/UX Design](https://astrells.com/services/ui-ux-design): User interface and experience design.
+- [Packaging Design](https://astrells.com/services/packaging-design): Product packaging design from concept to print.
+- [Label Design](https://astrells.com/services/label-design): Product label design for consumer goods.
+- [Marketing Strategy](https://astrells.com/services/marketing-strategy): Marketing strategy aligned with business outcomes.
+- [Digital Marketing](https://astrells.com/services/digital-marketing): Digital campaign execution across channels.
+- [Creative Direction](https://astrells.com/services/creative-direction): Strategic creative oversight and brand consistency.
+- [Social Media Design](https://astrells.com/services/social-media-design): Social media content design.
+- [Social Media Management](https://astrells.com/services/social-media-management): End-to-end social media management.
+- [Posters & Banners](https://astrells.com/services/posters-banners): Event and campaign poster and banner design.
+- [Motion Graphics](https://astrells.com/services/motion-graphics): Animated content and motion design.
+- [Print Design](https://astrells.com/services/print-design): Premium print collateral design.
+- [SEO](https://astrells.com/services/seo): Technical, on-page, and AI search optimisation.
+- [Consulting](https://astrells.com/services/consulting): Creative and digital strategy consulting.
+
+## Legal
+
+- [Privacy Policy](https://astrells.com/legal/privacy-policy): How ASTRELL handles personal data (UK GDPR compliant).
+- [Terms of Service](https://astrells.com/legal/terms-of-service): Terms governing ASTRELL's services.
+- [Cookie Policy](https://astrells.com/legal/cookie-policy): Cookie usage and preferences.
+- [Refund Policy](https://astrells.com/legal/refund-policy): Refund and cancellation terms for custom work.
+- [AI Usage Policy](https://astrells.com/legal/ai-usage-policy): How ASTRELL uses AI tools in its creative process.
+- [Acceptable Use Policy](https://astrells.com/legal/acceptable-use-policy): Rules for using ASTRELL's services.
+
+## Contact
+
+- Email: hello@astrell.com
+- Location: England, UK (serving worldwide)

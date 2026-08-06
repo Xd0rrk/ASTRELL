@@ -1,0 +1,16 @@
+{
+  "projects": {
+    "default": "astrell0"
+  },
+  "targets": {
+    "astrell0": {
+      "storage": {
+        "showcase": ["astrell0-showcase-assets"],
+        "gallery": ["astrell0-portfolio-gallery"],
+        "blog": ["astrell0-blog-content"],
+        "system": ["astrell0-system-assets"]
+      }
+    }
+  },
+  "etags": {}
+}

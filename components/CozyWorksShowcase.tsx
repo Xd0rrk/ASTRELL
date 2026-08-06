@@ -259,10 +259,56 @@ function ParallaxWorkCard({
 export default function CozyWorksShowcase() {
   const [activeItem, setActiveItem] = useState<WorkItem | null>(null);
   const [activeFilter, setActiveFilter] = useState<string>('all');
+  const [works, setWorks] = useState<WorkItem[]>(WORKS);
+
+  React.useEffect(() => {
+    async function loadFirestoreWorks() {
+      try {
+        const { getPublishedGalleryItems, getMediaAssets } = await import('@/lib/firebase-collections');
+        const items = await getPublishedGalleryItems();
+        if (items && items.length > 0) {
+          const mediaIds = items.map((i) => i.media_id);
+          const mediaAssets = await getMediaAssets(mediaIds);
+          const mediaMap = new Map(mediaAssets.map((m) => [m.id, m]));
+
+          const dynamicWorks: WorkItem[] = items.map((item, idx) => {
+            const media = mediaMap.get(item.media_id);
+            return {
+              id: item.id,
+              title: item.title,
+              category: item.category,
+              year: String(item.project_year || 2026),
+              location: 'Global / Remote',
+              client: item.client_name || 'ASTRELL Partner',
+              description: `A bespoke ${item.category.toLowerCase()} experience designed and built for ${item.client_name || 'ASTRELL clients'}.`,
+              image: media?.public_url || 'https://picsum.photos/seed/skincare/1200/900',
+              aspectRatio: idx % 2 === 0 ? 'aspect-[4/3]' : 'aspect-[16/10]',
+              tags: item.tags || [item.category, 'ASTRELL'],
+              metrics: '+180% Engagement Growth',
+              fullDetails: {
+                role: `${item.category} Lead`,
+                timeline: '8-12 Weeks',
+                overview: `We developed a comprehensive ${item.category.toLowerCase()} strategy and visual presentation focused on digital conversion and brand authority.`,
+                deliverables: [`${item.category} Strategy`, 'Design System Specs', 'Digital Launch Assets'],
+                gallery: [media?.public_url || 'https://picsum.photos/seed/skincare1/1000/750'],
+              },
+            };
+          });
+
+          if (dynamicWorks.length > 0) {
+            setWorks(dynamicWorks);
+          }
+        }
+      } catch (err) {
+        console.warn('Fallback to static works:', err);
+      }
+    }
+    loadFirestoreWorks();
+  }, []);
 
   const filteredWorks = activeFilter === 'all'
-    ? WORKS
-    : WORKS.filter(w => w.category.toLowerCase().includes(activeFilter.toLowerCase()));
+    ? works
+    : works.filter(w => w.category.toLowerCase().includes(activeFilter.toLowerCase()));
 
   const scrollToContact = () => {
     const el = document.getElementById('contact');

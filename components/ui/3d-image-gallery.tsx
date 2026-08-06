@@ -46,7 +46,7 @@ function useCard() {
 function CardProvider({ children, scrollYProgress }: { children: React.ReactNode; scrollYProgress: any }) {
   const [selectedCard, setSelectedCard] = useState<Card | null>(null)
 
-  const cards: Card[] = [
+  const defaultCards: Card[] = [
     { id: "1", imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=600&auto=format&fit=crop", alt: "Elegant Invitation", title: "Elegant Invitation" },
     { id: "2", imageUrl: "https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=600&auto=format&fit=crop", alt: "Modern Design", title: "Modern Design" },
     { id: "3", imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop", alt: "Vintage Style", title: "Vintage Style" },
@@ -68,6 +68,39 @@ function CardProvider({ children, scrollYProgress }: { children: React.ReactNode
     { id: "19", imageUrl: "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=600&auto=format&fit=crop", alt: "Alpine Peaks", title: "Alpine Peaks" },
     { id: "20", imageUrl: "https://images.unsplash.com/photo-1500627869374-13cd993b1115?q=80&w=600&auto=format&fit=crop", alt: "Vibrant Horizon", title: "Vibrant Horizon" },
   ]
+
+  const [cards, setCards] = useState<Card[]>(defaultCards)
+
+  useEffect(() => {
+    async function loadFirestoreShowcase() {
+      try {
+        const { getActiveShowcaseItems, getMediaAssets } = await import('@/lib/firebase-collections');
+        const items = await getActiveShowcaseItems();
+        if (items && items.length > 0) {
+          const mediaIds = items.map((i) => i.media_id);
+          const mediaAssets = await getMediaAssets(mediaIds);
+          const mediaMap = new Map(mediaAssets.map((m) => [m.id, m]));
+
+          const dynamicCards: Card[] = items.map((item) => {
+            const media = mediaMap.get(item.media_id);
+            return {
+              id: item.id,
+              title: item.title,
+              alt: item.subtitle || item.title,
+              imageUrl: media?.public_url || "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=600&auto=format&fit=crop",
+            };
+          });
+
+          if (dynamicCards.length > 0) {
+            setCards(dynamicCards);
+          }
+        }
+      } catch (err) {
+        console.warn('Fallback to static 3D gallery cards:', err);
+      }
+    }
+    loadFirestoreShowcase();
+  }, []);
 
   return (
     <CardContext.Provider value={{ selectedCard, setSelectedCard, cards, scrollYProgress }}>
@@ -151,14 +184,15 @@ function StarfieldBackground() {
 function FloatingCard({
   card,
   position,
+  setSelectedCard,
 }: {
   card: Card
   position: { x: number; y: number; z: number; rotationX: number; rotationY: number; rotationZ: number }
+  setSelectedCard: (card: Card | null) => void
 }) {
   const meshRef = useRef<THREE.Mesh>(null)
   const groupRef = useRef<THREE.Group>(null)
   const [hovered, setHovered] = useState(false)
-  const { setSelectedCard } = useCard()
 
   useFrame(({ camera }) => {
     if (groupRef.current) {
@@ -339,8 +373,7 @@ function CardModal() {
    Card Galaxy (inlined)
    ========================= */
 
-function CardGalaxy() {
-  const { cards } = useCard()
+function CardGalaxy({ cards, setSelectedCard }: { cards: Card[]; setSelectedCard: (card: Card | null) => void }) {
 
   const cardPositions = useMemo(() => {
     const positions: {
@@ -387,7 +420,7 @@ function CardGalaxy() {
       </Sphere>
 
       {cards.map((card, i) => (
-        <FloatingCard key={card.id} card={card} position={cardPositions[i]} />
+        <FloatingCard key={card.id} card={card} position={cardPositions[i]} setSelectedCard={setSelectedCard} />
       ))}
     </>
   )
@@ -397,52 +430,60 @@ function CardGalaxy() {
    Page/Component Export
    ========================= */
 
+function GalleryContent() {
+  const { cards, setSelectedCard } = useCard()
+
+  return (
+    <div className="w-full h-full relative overflow-hidden bg-transparent">
+      <StarfieldBackground />
+
+      <Canvas
+        camera={{ position: [0, 0, 16], fov: 60 }}
+        className="absolute inset-0 z-10"
+        onCreated={({ gl }) => {
+          gl.domElement.style.pointerEvents = "auto"
+        }}
+      >
+        <Suspense fallback={null}>
+          <Environment preset="night" />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[10, 10, 10]} intensity={0.8} />
+          <pointLight position={[-10, -10, -10]} intensity={0.4} />
+          <CardGalaxy cards={cards} setSelectedCard={setSelectedCard} />
+          <OrbitControls
+            enablePan={false}
+            enableZoom={true}
+            enableRotate={true}
+            minDistance={6}
+            maxDistance={35}
+            autoRotate={true}
+            autoRotateSpeed={0.4}
+            rotateSpeed={0.6}
+            zoomSpeed={1.0}
+            target={[0, 0, 0]}
+          />
+        </Suspense>
+      </Canvas>
+
+      <CardModal />
+
+      <div className="absolute top-6 left-6 z-20 text-white pointer-events-none select-none max-w-xs md:max-w-md">
+        <div className="flex items-center gap-2 mb-1.5">
+          <span className="h-1.5 w-1.5 rounded-full bg-[#FF3E00] animate-pulse" />
+          <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#FF3E00] font-bold">Explore Our Work In 3D</span>
+        </div>
+        <h3 className="font-display text-xl md:text-2xl font-black mb-1 text-white tracking-tight uppercase leading-none">Step inside the gallery.</h3>
+        <p className="text-[10px] font-mono text-neutral-300 tracking-wide mb-1">A closer look at packaging, illustration, and spatial design work — rotate, zoom, and inspect each piece.</p>
+        <p className="text-[9px] font-mono text-neutral-500 tracking-wider">Drag to rotate · Scroll to zoom · Click any piece to inspect</p>
+      </div>
+    </div>
+  )
+}
+
 export default function StellarCardGallerySingle({ scrollYProgress }: { scrollYProgress: any }) {
   return (
     <CardProvider scrollYProgress={scrollYProgress}>
-      <div className="w-full h-full relative overflow-hidden bg-transparent">
-        <StarfieldBackground />
-
-        <Canvas
-          camera={{ position: [0, 0, 16], fov: 60 }}
-          className="absolute inset-0 z-10"
-          onCreated={({ gl }) => {
-            gl.domElement.style.pointerEvents = "auto"
-          }}
-        >
-          <Suspense fallback={null}>
-            <Environment preset="night" />
-            <ambientLight intensity={0.5} />
-            <pointLight position={[10, 10, 10]} intensity={0.8} />
-            <pointLight position={[-10, -10, -10]} intensity={0.4} />
-            <CardGalaxy />
-            <OrbitControls
-              enablePan={false}
-              enableZoom={true}
-              enableRotate={true}
-              minDistance={6}
-              maxDistance={35}
-              autoRotate={true}
-              autoRotateSpeed={0.4}
-              rotateSpeed={0.6}
-              zoomSpeed={1.0}
-              target={[0, 0, 0]}
-            />
-          </Suspense>
-        </Canvas>
-
-        <CardModal />
-
-        <div className="absolute top-6 left-6 z-20 text-white pointer-events-none select-none max-w-xs md:max-w-md">
-          <div className="flex items-center gap-2 mb-1.5">
-            <span className="h-1.5 w-1.5 rounded-full bg-[#FF3E00] animate-pulse" />
-            <span className="text-[10px] font-mono tracking-[0.2em] uppercase text-[#FF3E00] font-bold">Explore Our Work In 3D</span>
-          </div>
-          <h3 className="font-display text-xl md:text-2xl font-black mb-1 text-white tracking-tight uppercase leading-none">Step inside the gallery.</h3>
-          <p className="text-[10px] font-mono text-neutral-300 tracking-wide mb-1">A closer look at packaging, illustration, and spatial design work — rotate, zoom, and inspect each piece.</p>
-          <p className="text-[9px] font-mono text-neutral-500 tracking-wider">Drag to rotate · Scroll to zoom · Click any piece to inspect</p>
-        </div>
-      </div>
+      <GalleryContent />
     </CardProvider>
   )
 }

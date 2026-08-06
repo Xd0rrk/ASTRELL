@@ -1,0 +1,1 @@
+import { getPublishedBlogPosts } from './lib/firebase-collections'; getPublishedBlogPosts().then(res => console.log('FIRESTORE POSTS:', res.map(p => p.title))).catch(err => console.error(err));

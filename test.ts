@@ -1,0 +1,1 @@
+import { BLOG_POSTS } from './lib/blog-data'; console.log('POSTS LENGTH:', BLOG_POSTS.length);

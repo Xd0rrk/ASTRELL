@@ -4,10 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "npm run generate-previews",
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "clean": "next clean"
+    "clean": "next clean",
+    "generate-previews": "npx tsx scripts/generate-previews.ts"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
@@ -19,6 +21,9 @@
     "autoprefixer": "^10.4.21",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "firebase": "^12.17.0",
+    "firebase-admin": "^14.2.0",
     "lightningcss": "^1.33.0",
     "lucide-react": "^0.553.0",
     "motion": "^12.23.24",

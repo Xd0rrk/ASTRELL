@@ -1,0 +1,30 @@
+{
+  "firestore": {
+    "database": "(default)",
+    "location": "nam5",
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": [
+    {
+      "bucket": "astrell0.firebasestorage.app",
+      "rules": "rules/storage-showcase.rules"
+    },
+    {
+      "target": "showcase",
+      "rules": "rules/storage-showcase.rules"
+    },
+    {
+      "target": "gallery",
+      "rules": "rules/storage-gallery.rules"
+    },
+    {
+      "target": "blog",
+      "rules": "rules/storage-blog.rules"
+    },
+    {
+      "target": "system",
+      "rules": "rules/storage-system.rules"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import { motion, AnimatePresence, useScroll, useMotionValueEvent } from 'motion/
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 interface NavItem {
   name: string;
@@ -18,6 +19,7 @@ const NAV_ITEMS: NavItem[] = [
   { name: 'Process', id: 'process' },
   { name: 'Team', id: 'team' },
   { name: 'Gallery', id: 'gallery', href: '/gallery' },
+  { name: 'Blog', id: 'blog', href: '/blog' },
   { name: 'Contact', id: 'contact' },
 ];
 
@@ -52,12 +54,14 @@ export default function SmartNavbar() {
       if (pathname === '/gallery') {
         // Use requestAnimationFrame to avoid synchronous state update warning
         requestAnimationFrame(() => setActiveSection('gallery'));
+      } else if (pathname.startsWith('/blog')) {
+        requestAnimationFrame(() => setActiveSection('blog'));
       }
       return;
     }
 
     const handleScroll = () => {
-      const sections = NAV_ITEMS.filter(item => item.id !== 'gallery');
+      const sections = NAV_ITEMS.filter(item => !item.href);
       let current = '';
       
       for (const section of sections) {
@@ -144,16 +148,13 @@ export default function SmartNavbar() {
           <div className="hidden md:flex items-center space-x-2">
             {NAV_ITEMS.map((item) => {
               const isActive = activeSection === item.id;
-              
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavClick(item.id, item.href)}
-                  className={cn(
-                    "relative px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300",
-                    isActive ? "text-white" : "text-white/50 hover:text-white"
-                  )}
-                >
+              const buttonClasses = cn(
+                "relative px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-all duration-300 block",
+                isActive ? "text-white" : "text-white/50 hover:text-white"
+              );
+
+              const innerContent = (
+                <>
                   {isActive && (
                     <motion.div
                       layoutId="active-pill"
@@ -162,6 +163,29 @@ export default function SmartNavbar() {
                     />
                   )}
                   <span className="relative z-10">{item.name}</span>
+                </>
+              );
+
+              if (item.href) {
+                return (
+                  <Link
+                    key={item.id}
+                    href={item.href}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={buttonClasses}
+                  >
+                    {innerContent}
+                  </Link>
+                );
+              }
+
+              return (
+                <button
+                  key={item.id}
+                  onClick={() => handleNavClick(item.id, item.href)}
+                  className={buttonClasses}
+                >
+                  {innerContent}
                 </button>
               );
             })}
@@ -200,20 +224,39 @@ export default function SmartNavbar() {
             className="fixed inset-0 z-40 bg-neutral-950 pt-24 px-6 md:hidden flex flex-col justify-between pb-10"
           >
             <div className="space-y-6 flex flex-col pt-8">
-              {NAV_ITEMS.map((item, i) => (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavClick(item.id, item.href)}
-                  className={cn(
-                    "text-3xl font-display font-bold text-left hover:text-white transition-colors duration-200",
-                    activeSection === item.id 
-                      ? "text-white underline decoration-neutral-700 underline-offset-8" 
-                      : "text-neutral-200"
-                  )}
-                >
-                  0{i + 1} — {item.name}
-                </button>
-              ))}
+              {NAV_ITEMS.map((item, i) => {
+                const navClasses = cn(
+                  "text-3xl font-display font-bold text-left hover:text-white transition-colors duration-200 block",
+                  activeSection === item.id 
+                    ? "text-white underline decoration-neutral-700 underline-offset-8" 
+                    : "text-neutral-200"
+                );
+                
+                const content = `0${i + 1} — ${item.name}`;
+
+                if (item.href) {
+                  return (
+                    <Link
+                      key={item.id}
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={navClasses}
+                    >
+                      {content}
+                    </Link>
+                  );
+                }
+
+                return (
+                  <button
+                    key={item.id}
+                    onClick={() => handleNavClick(item.id, item.href)}
+                    className={navClasses}
+                  >
+                    {content}
+                  </button>
+                );
+              })}
             </div>
           </motion.div>
         )}

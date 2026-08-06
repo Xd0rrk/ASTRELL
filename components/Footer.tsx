@@ -23,23 +23,23 @@ export default function Footer() {
               A creative studio building websites, brands, and digital products designed to grow your business.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
+              <a href="#" aria-label="ASTRELL on Instagram" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
+              <a href="#" aria-label="ASTRELL on Twitter" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
+              <a href="#" aria-label="ASTRELL on LinkedIn" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
+              <a href="#" aria-label="ASTRELL on Dribbble" className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white hover:border-[#FF3E00] hover:text-[#FF3E00] hover:bg-[#FF3E00]/10 transition-all duration-300">
                 <Dribbble size={20} />
               </a>
             </div>
           </div>
 
           {/* Links Columns */}
-          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-3 gap-8">
+          <div className="md:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-8">
             <div className="space-y-6">
               <h4 className="text-[10px] font-mono text-white/40 uppercase font-bold tracking-widest">Navigation</h4>
               <ul className="space-y-4">
@@ -48,10 +48,34 @@ export default function Footer() {
                   { name: 'Expertise', target: 'expertise' },
                   { name: 'Process', target: 'process' },
                   { name: 'Team', target: 'team' },
+                  { name: 'Blog', target: 'blog', href: '/blog' },
                   { name: 'Contact', target: 'contact' }
                 ].map((item) => (
                   <li key={item.name}>
-                    <Link href={`#${item.target}`} className="text-neutral-300 hover:text-white transition-colors text-sm font-light flex items-center group">
+                    <Link href={item.href || `/#${item.target}`} className="text-neutral-300 hover:text-white transition-colors text-sm font-light flex items-center group">
+                      <span className="relative overflow-hidden">
+                        <span className="block transition-transform duration-300 group-hover:-translate-y-full">{item.name}</span>
+                        <span className="absolute top-0 left-0 text-[#FF3E00] transition-transform duration-300 translate-y-full group-hover:translate-y-0">{item.name}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="space-y-6">
+              <h4 className="text-[10px] font-mono text-white/40 uppercase font-bold tracking-widest">Legal</h4>
+              <ul className="space-y-4">
+                {[
+                  { name: 'Privacy Policy', href: '/legal/privacy-policy' },
+                  { name: 'Terms of Service', href: '/legal/terms-of-service' },
+                  { name: 'Cookie Policy', href: '/legal/cookie-policy' },
+                  { name: 'Refund Policy', href: '/legal/refund-policy' },
+                  { name: 'AI Usage Policy', href: '/legal/ai-usage-policy' },
+                  { name: 'Acceptable Use', href: '/legal/acceptable-use-policy' },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <Link href={item.href} className="text-neutral-300 hover:text-white transition-colors text-sm font-light flex items-center group">
                       <span className="relative overflow-hidden">
                         <span className="block transition-transform duration-300 group-hover:-translate-y-full">{item.name}</span>
                         <span className="absolute top-0 left-0 text-[#FF3E00] transition-transform duration-300 translate-y-full group-hover:translate-y-0">{item.name}</span>
@@ -111,8 +135,9 @@ export default function Footer() {
             &copy; {currentYear} ASTRELL. All rights reserved.
           </div>
           <div className="flex gap-6">
-            <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-            <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/legal/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="/legal/terms-of-service" className="hover:text-white transition-colors">Terms of Service</Link>
+            <Link href="/legal/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
           </div>
         </div>
       </div>

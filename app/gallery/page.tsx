@@ -249,17 +249,61 @@ export default function GalleryPage() {
     return () => clearInterval(interval);
   }, []);
 
+  const [itemsList, setItemsList] = React.useState<PortfolioItem[]>(portfolioImages);
+
+  React.useEffect(() => {
+    async function loadFirestoreGallery() {
+      try {
+        const { getPublishedGalleryItems, getMediaAssets } = await import('@/lib/firebase-collections');
+        const items = await getPublishedGalleryItems();
+        if (items && items.length > 0) {
+          const mediaIds = items.map((i) => i.media_id);
+          const mediaAssets = await getMediaAssets(mediaIds);
+          const mediaMap = new Map(mediaAssets.map((m) => [m.id, m]));
+
+          const dynamicItems: PortfolioItem[] = items.map((item, idx) => {
+            const media = mediaMap.get(item.media_id);
+            let cat: PortfolioItem['category'] = 'brand';
+            const catLower = item.category.toLowerCase();
+            if (catLower.includes('poster') || catLower.includes('graphic')) cat = 'poster';
+            else if (catLower.includes('social') || catLower.includes('marketing')) cat = 'social';
+            else if (catLower.includes('packaging')) cat = 'packaging';
+
+            return {
+              id: idx + 1,
+              title: item.title.toUpperCase(),
+              category: cat,
+              categoryLabel: item.category,
+              client: item.client_name || 'ASTRELL Client',
+              year: String(item.project_year || '2026'),
+              alt: item.title,
+              src: media?.public_url || 'https://images.unsplash.com/photo-1626785774573-4b799315345d?w=1000&auto=format&fit=crop&q=80',
+              description: `High-impact ${item.category.toLowerCase()} presentation and creative assets.`,
+            };
+          });
+
+          if (dynamicItems.length > 0) {
+            setItemsList(dynamicItems);
+          }
+        }
+      } catch (err) {
+        console.warn('Fallback to static portfolio gallery images:', err);
+      }
+    }
+    loadFirestoreGallery();
+  }, []);
+
   const filteredItems = React.useMemo(() => {
-    let raw: PortfolioItem[] = portfolioImages;
+    let raw: PortfolioItem[] = itemsList;
     if (activeCategory === 'poster') {
-      raw = portfolioImages.filter(item => item.category === 'poster');
+      raw = itemsList.filter(item => item.category === 'poster');
     } else if (activeCategory === 'brand') {
-      raw = portfolioImages.filter(item => item.category === 'brand' || item.category === 'packaging');
+      raw = itemsList.filter(item => item.category === 'brand' || item.category === 'packaging');
     } else if (activeCategory === 'social') {
-      raw = portfolioImages.filter(item => item.category === 'social');
+      raw = itemsList.filter(item => item.category === 'social');
     }
 
-    if (raw.length === 0) return portfolioImages;
+    if (raw.length === 0) return itemsList;
 
     // Fill to 18 items so all 6 columns x 3 rows in GridBody are completely populated without empty gaps
     let filled = [...raw];
@@ -267,7 +311,7 @@ export default function GalleryPage() {
       filled = [...filled, ...raw];
     }
     return filled.slice(0, 18);
-  }, [activeCategory]);
+  }, [activeCategory, itemsList]);
 
   return (
     <div className="relative h-screen w-screen bg-neutral-950 text-neutral-100 selection:bg-neutral-800 overflow-hidden font-sans select-none">
