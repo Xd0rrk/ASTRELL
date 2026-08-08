@@ -42,7 +42,7 @@ export const BATCH_03_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/astrell_enterprise_web_engineering_hero.png',
  coverAlt: 'High-tech architectural 3D render of a web code matrix above a dark minimalist desk with orange lighting',
- author: AUTHORS.simon,
+ author: AUTHORS.elena,
  seo: {
  title: 'Enterprise Web Engineering: Custom Next.js Platform Architecture',
  description: 'Master modern enterprise web engineering. Discover how custom Next.js 15 architecture, edge caching, and WCAG accessibility deliver sub-second performance.',
@@ -265,7 +265,7 @@ export default async function EnterpriseDashboard() {
  popular: false,
  coverImage: '/blog/astrell_headless_vs_monolithic_hero.png',
  coverAlt: 'Minimalist 3D comparison render showing a modular decoupled cloud API architecture versus a monolithic block',
- author: AUTHORS.simon,
+ author: AUTHORS.elena,
  seo: {
  title: 'Headless CMS vs Monolithic Platforms: Executive Guide',
  description: 'Compare Headless CMS and Monolithic platforms. Learn how decoupled web architecture improves security, speed, and go-to-market flexibility.',
@@ -427,7 +427,7 @@ export default async function EnterpriseDashboard() {
  popular: true,
  coverImage: '/blog/astrell_web_performance_optimization_hero.png',
  coverAlt: 'Sleek 3D speed performance gauge indicating 99 Lighthouse performance score and 0.2s load time on dark translucent container',
- author: AUTHORS.simon,
+ author: AUTHORS.elena,
  seo: {
  title: 'Web Performance Optimization: Sub-Second Speed Guide',
  description: 'Achieve 99+ Lighthouse scores and sub-second load times. Learn ASTRELL performance engineering techniques for Next.js web applications.',
@@ -604,9 +604,9 @@ export default function HeroSection() {
  featured: false,
  trending: true,
  popular: true,
- coverImage: '/blog/astrell_ai_marketing_workflow_hero.png',
+ coverImage: '/blog/ai_copy_editing_workflow.webp',
  coverAlt: 'High-fidelity 3D render of a futuristic editorial desk with glowing orange holographic text interfaces',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'AI Copy-Editing Workflows for Marketing Teams',
  description: 'Scale content production safely. Learn how to build human-in-the-loop AI copy-editing workflows, structured prompts, and strict quality control gates.',
@@ -761,9 +761,9 @@ export default function HeroSection() {
  featured: false,
  trending: false,
  popular: true,
- coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
+ coverImage: '/blog/website_redesign_process.webp',
  coverAlt: 'ASTRELL 4-Phase Delivery Process 3D Infographic workflow chart',
- author: AUTHORS.julian,
+ author: AUTHORS.elena,
  seo: {
  title: 'Website Redesign Process: Discovery to Global Launch',
  description: 'Explore the 4-phase ASTRELL website redesign process. Learn how systematic UX architecture and custom engineering guarantee successful launches.',

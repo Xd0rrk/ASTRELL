@@ -41,7 +41,7 @@ export const BATCH_10_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'Behind-the-scenes photography studio set with softbox lighting and medium format camera setup',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Commercial Brand Photography & Art Direction Guide',
  description: 'Master commercial brand photography art direction. Learn shoot briefing, lighting design, and remote studio production with ASTRELL creative directors.',
@@ -213,7 +213,7 @@ export const BATCH_10_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'Side-by-side comparison of studio e-commerce white background product shot and on-location lifestyle photo',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Studio Photography vs Lifestyle Shoots: E-Commerce Guide',
  description: 'Compare studio product photography and lifestyle shoots. Learn when to use white-background precision versus location storytelling with ASTRELL.',
@@ -370,7 +370,7 @@ export const BATCH_10_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'A beautifully lit, modern corporate portrait in a sleek architectural office space',
- author: AUTHORS.simon,
+ author: AUTHORS.rand,
  seo: {
  title: 'Corporate Headshots & Team Photography for B2B Trust | ASTRELL',
  description: 'Discover how professional corporate headshots and team photography build B2B trust, humanize your brand, and drive enterprise lead generation.',
@@ -528,7 +528,7 @@ export const BATCH_10_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'A flat-lay of a production desk with a printed Call Sheet, location map, model comp cards, and color swatches',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Photo Shoot Pre-Production: Casting & Scouting Guide',
  description: 'Learn the rigorous pre-production process behind high-end commercial photography. Explore our guide to model casting, location scouting, and call sheets.',
@@ -686,7 +686,7 @@ export const BATCH_10_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'A split-screen before-and-after close-up portrait demonstrating frequency separation skin retouching',
- author: AUTHORS.simon,
+ author: AUTHORS.rand,
  seo: {
  title: 'High-End Image Retouching & Post-Production Workflows | ASTRELL',
  description: 'Discover the professional post-production workflow for commercial photography. Learn about frequency separation, dodge and burn, and brand color grading.',

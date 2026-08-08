@@ -151,42 +151,43 @@ export interface BlogPost {
 export const AUTHORS: Record<string, Author> = {
   elena: {
     name: 'Elena Varga',
-    role: 'Partner & Principal Brand Strategist',
-    avatar: '/author_rand_khaled_1785542515171.png',
-    bio: 'Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.',
+    role: 'LEAD WEB ARCHITECT',
+    avatar: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
+    bio: 'Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.',
     twitter: 'https://twitter.com/astrells',
     linkedin: 'https://linkedin.com/company/astrells'
   },
   julian: {
     name: 'Julian Cross',
-    role: 'Head of Product Design & UI/UX',
-    avatar: '/author_simon_a_1785542523544.png',
-    bio: 'Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.',
+    role: 'PACKAGING SPECIALIST',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80',
+    bio: 'Specializing in structural packaging engineering, material selection, and premium unboxing experiences.',
     twitter: 'https://twitter.com/astrells',
     linkedin: 'https://linkedin.com/company/astrells'
   },
   nadia: {
     name: 'Nadia Al-Mansoor',
-    role: 'Creative Director & Motion Specialist',
-    avatar: '/author_rand_khaled_1785542515171.png',
-    bio: 'Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.',
+    role: '3D VISUAL DESIGNER',
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80',
+    bio: 'Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.',
     twitter: 'https://twitter.com/astrells',
     linkedin: 'https://linkedin.com/company/astrells'
   },
   rand: {
     name: 'Rand Khaled',
-    role: 'Director of Growth & Performance Marketing',
-    avatar: '/author_rand_khaled_1785542515171.png',
-    bio: 'Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.',
+    role: 'CREATIVE DIRECTOR & BRAND LEAD',
+    avatar: '/rand_khaled.jpg',
+    bio: 'Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.',
     twitter: 'https://twitter.com/astrells',
     linkedin: 'https://linkedin.com/company/astrells'
   },
   simon: {
     name: 'Simon A-A',
-    role: 'Lead Web Architect & Technical Director',
-    avatar: '/author_simon_a_1785542523544.png',
-    bio: 'Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.',
+    role: 'SYSTEMS ENGINEER',
+    avatar: '/simon_aa.jpg',
+    bio: 'Specializing in high-performance backend architecture, systems engineering, edge caching networks, and scalable infrastructure.',
     twitter: 'https://twitter.com/astrells',
     linkedin: 'https://linkedin.com/company/astrells'
   }
 };
+

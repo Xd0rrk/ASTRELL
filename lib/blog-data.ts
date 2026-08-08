@@ -96,7 +96,7 @@ export const BLOG_POSTS: BlogPost[] = [
     popular: true,
     coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
     coverAlt: 'Abstract 3D digital architecture representing ASTRELL design philosophy',
-    author: AUTHORS.rand,
+    author: AUTHORS.elena,
     seo: {
       title: 'The ASTRELL Approach: Next-Gen Web Experiences | ASTRELL',
       description: 'Discover how ASTRELL builds bespoke web experiences, digital products, and brand systems that drive +180% conversion lifts and €45M+ client growth.',
@@ -369,7 +369,7 @@ export function BentoCard({ title, description, tag, accent, className }: BentoC
     popular: false,
     coverImage: '/blog/blog_cover_dark_mode_1785542436369.png',
     coverAlt: 'Glowing digital dark mode design tokens interface',
-    author: AUTHORS.simon,
+    author: AUTHORS.elena,
     seo: {
       title: 'Mastering Dark Mode Design Systems | ASTRELL',
       description: 'A comprehensive guide to building premium dark mode design systems with high contrast, elegant typography, and micro-interactions.',
@@ -483,7 +483,7 @@ export function BentoCard({ title, description, tag, accent, className }: BentoC
     popular: true,
     coverImage: '/blog/blog_cover_fluid_motion_1785542444285.png',
     coverAlt: 'Abstract fluid motion graphics',
-    author: AUTHORS.simon,
+    author: AUTHORS.elena,
     seo: {
       title: 'Engineering Fluid Motion with React 19 & Motion | ASTRELL',
       description: 'Learn how to build 60fps web animations and scroll-driven interactive experiences using React 19 and Framer Motion v12.',
@@ -682,7 +682,7 @@ export function useSpringParallax(targetRef: React.RefObject<HTMLElement>) {
     popular: false,
     coverImage: '/blog/blog_cover_conversion_1785542466151.png',
     coverAlt: 'Analytics dashboard showing conversion rate improvement metrics',
-    author: AUTHORS.rand,
+    author: AUTHORS.elena,
     seo: {
       title: 'Case Study: +180% Conversion Lift & €45M Growth | ASTRELL',
       description: 'Explore the exact UX refactoring and speed optimization strategy ASTRELL implemented to drive +180% conversion lifts for enterprise clients.',

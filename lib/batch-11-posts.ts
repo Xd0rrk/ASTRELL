@@ -209,7 +209,7 @@ export const BATCH_11_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'A vibrant UI-focused collage showing a ChatGPT prompt, a grid of raw Midjourney variations, and a polished digital mood board layout.',
- author: AUTHORS.simon,
+ author: AUTHORS.rand,
  seo: {
  title: 'AI-Assisted Moodboarding Workflows for Concept Development',
  description: 'Accelerate your concept development with AI-assisted moodboarding. Learn the workflow for combining ChatGPT ideation with Midjourney visual generation.',
@@ -367,7 +367,7 @@ export const BATCH_11_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_brand_loyalty_1785542453708.png',
  coverAlt: 'A conceptual UI showing a BRAND_OS.md file feeding data into an AI node structure, next to a Brand Guardian GPT interface.',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Custom GPTs & Claude Projects for Brand Consistency',
  description: 'Learn how to set up Custom GPTs and Claude Projects for your design team. Create an AI Brand Guardian that strictly enforces visual and verbal brand guidelines.',
@@ -525,7 +525,7 @@ export const BATCH_11_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'A sleek isometric rendering of a digital workspace showing a structured Airtable database with floating Prompt Cards.',
- author: AUTHORS.simon,
+ author: AUTHORS.rand,
  seo: {
  title: 'How to Build an AI Prompt Library for Marketing Teams',
  description: 'Stop reinventing the wheel. Learn how to build, structure, and maintain an AI prompt library for your marketing team using Notion or Airtable.',
@@ -683,7 +683,7 @@ export const BATCH_11_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'A sleek workspace showing a split workflow: automated batch-processing thumbnails on one screen, and high-resolution manual retouching with a stylus on the other.',
- author: AUTHORS.simon,
+ author: AUTHORS.rand,
  seo: {
  title: 'AI Photo Retouching Workflows: Automation vs. Human Editing',
  description: 'Discover the optimal AI photo retouching workflow. Learn exactly what commercial photography tasks to automate and what requires human artistry.',

@@ -371,7 +371,7 @@ export const BATCH_08_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: '3D brand mascot character model turn-around render with facial expression sheet on dark background',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Brand Mascot & Character Design Architecture Guide',
  description: 'Design 3D brand mascots and character systems for digital products. Discover character rigging, UI integration, and brand humanization with ASTRELL.',
@@ -685,7 +685,7 @@ export const BATCH_08_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_fluid_motion_1785542444285.png',
  coverAlt: 'Vector Lottie keyframe timeline diagram transforming into React JSON code on dark monitor',
- author: AUTHORS.simon,
+ author: AUTHORS.nadia,
  seo: {
  title: 'UI Micro-Animations with Motion & Lottie JSON Guide',
  description: 'Master Lottie and Motion UI micro-animations. Learn how to export lightweight 60fps vector JSON animations for Next.js and React apps.',

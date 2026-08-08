@@ -247,9 +247,6 @@ export default function ArticleClient({ post }: ArticleClientProps) {
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-60" />
-          <div className="absolute bottom-4 left-6 right-6 text-xs font-mono text-neutral-300 bg-black/70 backdrop-blur-md p-3.5 rounded-xl border border-white/10 max-w-lg flex items-center gap-2">
-            <span className="text-[#FF3E00] font-bold">IMAGE:</span> {post.coverAlt}
-          </div>
         </div>
 
         {/* ═══════════════════════════════════════════════════════════════

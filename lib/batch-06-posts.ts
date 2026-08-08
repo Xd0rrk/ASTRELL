@@ -41,7 +41,7 @@ export const BATCH_06_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: 'Bespoke graphic design system grid and typography layout sample on dark surface',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Professional Graphic Design Systems & Brand Cohesion',
  description: 'Master enterprise graphic design systems. Learn how grid layouts, custom typography, and print specifications ensure brand cohesion with ASTRELL.',
@@ -214,7 +214,7 @@ export const BATCH_06_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/section_dark_mode_contrast_1785542493475.png',
  coverAlt: 'Bespoke typography scale hierarchy specimen on dark background',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Typography Hierarchy & Custom Font Design Guide',
  description: 'Master typography hierarchy and custom font design. Learn modular scales, kerning, and web font performance with ASTRELL typography experts.',
@@ -371,7 +371,7 @@ export const BATCH_06_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: 'Side-by-side CMYK press sheet proof and digital P3 color monitor test on dark desk',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Print vs Digital Design: Color Profiles & Prepress Specs',
  description: 'Manage color profiles across print and digital media. Learn CMYK to sRGB conversion, Pantone matching, and prepress standards with ASTRELL.',
@@ -528,7 +528,7 @@ export const BATCH_06_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'Conceptual visualization of a digital brand brain being fed structured data blocks',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Custom GPTs & Claude Projects: Brand Consistency Setup',
  description: 'Setup guide for Custom GPTs and Claude Projects. Learn how to maintain enterprise brand voice consistency and implement AI governance frameworks.',
@@ -685,7 +685,7 @@ export const BATCH_06_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/section_dark_mode_contrast_1785542493475.png',
  coverAlt: 'Bespoke 24px vector iconography grid alignment specimen on dark UI canvas',
- author: AUTHORS.julian,
+ author: AUTHORS.rand,
  seo: {
  title: 'Custom Iconography & Asset Libraries for Product UI',
  description: 'Master custom iconography design. Learn SVG grid alignment, stroke weight balancing, and React icon packaging with ASTRELL.',

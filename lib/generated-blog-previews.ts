@@ -40,9 +40,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_enterprise_brand_guide_hero.png",
     "coverAlt": "Architectural 3D render of an enterprise brand identity design system layout with orange accents",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -96,9 +96,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_identity_vs_strategy_hero.png",
     "coverAlt": "Side-by-side comparison cards for brand strategy framework and visual design tokens on dark background",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -151,9 +151,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "3D financial growth line chart integrated into a sleek dark UI dashboard card with orange accent",
     "author": {
       "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -203,9 +203,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_rebrand_signs_hero.png",
     "coverAlt": "Conceptual photograph of a fragmented glass brand mark reforming into a unified aesthetic on dark background",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -257,10 +257,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_design_systems_hero.png",
     "coverAlt": "Architectural design system documentation mockup displaying brand guidelines typography scales and color swatch tokens",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -311,10 +311,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_ai_prompt_system_hero.png",
     "coverAlt": "Conceptual visualization of a Midjourney prompt terminal interface overlapping with high-fidelity graphic design assets",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -364,9 +364,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_rebrand_risk_management_hero.png",
     "coverAlt": "Abstract 3D architectural render of interlocking obsidian balance scales with orange indicators on dark background",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -417,10 +417,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_color_typography_psychology_hero.png",
     "coverAlt": "Close-up macro photography of custom typography swatches and vibrant color spectrum cards on dark oak desk",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -470,9 +470,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_b2b_brand_strategy_hero.png",
     "coverAlt": "3D rendering of complex technical node network transforming into a clean minimalist orange brand logo structure on dark glass",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -523,9 +523,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_rebranding_mistakes_hero.png",
     "coverAlt": "Minimalist conceptual composition showing a dark polished stone maze with a glowing orange path leading out",
     "author": {
-      "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
       "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
@@ -578,10 +578,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_enterprise_web_engineering_hero.png",
     "coverAlt": "High-tech architectural 3D render of a web code matrix above a dark minimalist desk with orange lighting",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -632,10 +632,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_headless_vs_monolithic_hero.png",
     "coverAlt": "Minimalist 3D comparison render showing a modular decoupled cloud API architecture versus a monolithic block",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -685,10 +685,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_web_performance_optimization_hero.png",
     "coverAlt": "Sleek 3D speed performance gauge indicating 99 Lighthouse performance score and 0.2s load time on dark translucent container",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -738,10 +738,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/astrell_ai_marketing_workflow_hero.png",
     "coverAlt": "High-fidelity 3D render of a futuristic editorial desk with glowing orange holographic text interfaces",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -791,10 +791,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "ASTRELL 4-Phase Delivery Process 3D Infographic workflow chart",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -845,10 +845,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_dark_mode_178554236369.png",
     "coverAlt": "Accessible high-contrast UI component layout with focused outlines on dark surface",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -899,10 +899,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_conversion_1785542466151.png",
     "coverAlt": "Luxury 3D product showcase card with glowing orange accents on dark background",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -953,10 +953,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "Architectural UI UX product design layout with glowing orange interaction states on dark background",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1007,10 +1007,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_conversion_1785542466151.png",
     "coverAlt": "UX audit analytics telemetry breakdown card on dark UI layout",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1060,10 +1060,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/section_dark_mode_contrast_1785542493475.png",
     "coverAlt": "Design system tokens and scalable UI component library layout on dark background",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1114,10 +1114,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "Mobile interface layout showing ergonomic thumb zone reach mapping on dark glass device display",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1169,9 +1169,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Abstract fluid motion graphics depicting UI micro-interaction state transitions",
     "author": {
       "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "role": "3D VISUAL DESIGNER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1222,10 +1222,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "3D tree diagram of complex SaaS information architecture taxonomy on dark background",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1276,10 +1276,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/section_dark_mode_contrast_1785542493475.png",
     "coverAlt": "Enterprise analytics dashboard layout with Bento cards and glowing line charts on dark UI surface",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1330,10 +1330,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "UX prototyping wireframe cards transitioning into high-fidelity dark UI mockup",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1384,10 +1384,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "Bespoke graphic design system grid and typography layout sample on dark surface",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1439,10 +1439,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/section_dark_mode_contrast_1785542493475.png",
     "coverAlt": "Bespoke typography scale hierarchy specimen on dark background",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1493,10 +1493,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "Side-by-side CMYK press sheet proof and digital P3 color monitor test on dark desk",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1547,10 +1547,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "Conceptual visualization of a digital brand brain being fed structured data blocks",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1601,10 +1601,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/section_dark_mode_contrast_1785542493475.png",
     "coverAlt": "Bespoke 24px vector iconography grid alignment specimen on dark UI canvas",
     "author": {
-      "name": "Julian Cross",
-      "role": "Head of Product Design & UI/UX",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Architecting scalable design systems, multi-platform UI/UX frameworks, and conversion-engineered digital products.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1655,10 +1655,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "Luxury rigid packaging unboxing experience mockup with gold foil stamping on dark background",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1710,10 +1710,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "Tactile eco-friendly cotton paper sample box with embossed leaf motif on dark background",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1763,10 +1763,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "Custom D2C corrugated mailer box with printed inner interior graphic pattern on dark surface",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1817,10 +1817,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "Close-up detail photography of metallic copper foil stamping and micro-embossing on matte black box",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1871,10 +1871,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "FMCG product packaging line-up displaying strong brand block color hierarchy on retail shelf display",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Julian Cross",
+      "role": "PACKAGING SPECIALIST",
+      "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+      "bio": "Specializing in structural packaging engineering, material selection, and premium unboxing experiences.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1926,9 +1926,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "3D glowing metallic motion graphics asset rendering on dark studio backdrop",
     "author": {
       "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "role": "3D VISUAL DESIGNER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -1981,9 +1981,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Photorealistic 3D CGI product visualization mockup with interactive rotatable viewer interface",
     "author": {
       "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "role": "3D VISUAL DESIGNER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2034,10 +2034,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "3D brand mascot character model turn-around render with facial expression sheet on dark background",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2089,9 +2089,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Kinetic typography text motion graphic animation specimen on dark background",
     "author": {
       "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "role": "3D VISUAL DESIGNER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2142,10 +2142,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_fluid_motion_1785542444285.png",
     "coverAlt": "Vector Lottie keyframe timeline diagram transforming into React JSON code on dark monitor",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Nadia Al-Mansoor",
+      "role": "3D VISUAL DESIGNER",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80",
+      "bio": "Directing 3D motion graphics, WebGL experiences, and immersive visual storytelling across digital touchpoints.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2197,10 +2197,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "AI search engine citation node network showing brand entity graph connections on dark screen",
     "author": {
-      "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "name": "Simon A-A",
+      "role": "SYSTEMS ENGINEER",
+      "avatar": "/simon_aa.jpg",
+      "bio": "Specializing in high-performance backend architecture, systems engineering, edge caching networks, and scalable infrastructure.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2253,9 +2253,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Technical SEO audit dashboard showing sitemap indexing status and crawl budget graphs on dark screen",
     "author": {
       "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "role": "SYSTEMS ENGINEER",
+      "avatar": "/simon_aa.jpg",
+      "bio": "Specializing in high-performance backend architecture, systems engineering, edge caching networks, and scalable infrastructure.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2307,9 +2307,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Hub-and-spoke topic cluster diagram showing central P1 pillar connected to supporting articles on dark canvas",
     "author": {
       "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2360,10 +2360,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "AI brand visibility tracking dashboard displaying citation share metrics across ChatGPT and Perplexity on dark UI",
     "author": {
-      "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "name": "Simon A-A",
+      "role": "SYSTEMS ENGINEER",
+      "avatar": "/simon_aa.jpg",
+      "bio": "Specializing in high-performance backend architecture, systems engineering, edge caching networks, and scalable infrastructure.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2415,9 +2415,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "JSON-LD schema markup code window displaying valid Organization and Article schema on dark editor background",
     "author": {
       "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "role": "SYSTEMS ENGINEER",
+      "avatar": "/simon_aa.jpg",
+      "bio": "Specializing in high-performance backend architecture, systems engineering, edge caching networks, and scalable infrastructure.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2468,10 +2468,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "Behind-the-scenes photography studio set with softbox lighting and medium format camera setup",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2522,10 +2522,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "Side-by-side comparison of studio e-commerce white background product shot and on-location lifestyle photo",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2576,10 +2576,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "A beautifully lit, modern corporate portrait in a sleek architectural office space",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2630,10 +2630,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "A flat-lay of a production desk with a printed Call Sheet, location map, model comp cards, and color swatches",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2684,10 +2684,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "A split-screen before-and-after close-up portrait demonstrating frequency separation skin retouching",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2739,9 +2739,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "A sleek, dark-mode split-screen graphic showing a JSON prompt template next to a high-fidelity Midjourney output",
     "author": {
       "name": "Elena Varga",
-      "role": "Partner & Principal Brand Strategist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2792,10 +2792,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "A vibrant UI-focused collage showing a ChatGPT prompt, a grid of raw Midjourney variations, and a polished digital mood board layout.",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2846,10 +2846,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_brand_loyalty_1785542453708.png",
     "coverAlt": "A conceptual UI showing a BRAND_OS.md file feeding data into an AI node structure, next to a Brand Guardian GPT interface.",
     "author": {
-      "name": "Nadia Al-Mansoor",
-      "role": "Creative Director & Motion Specialist",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Directing visual identity systems, packaging engineering, 3D motion graphics, and commercial photography shoots across London, Paris, and Dubai.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2900,10 +2900,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "A sleek isometric rendering of a digital workspace showing a structured Airtable database with floating Prompt Cards.",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -2954,10 +2954,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_agency_selection_1785542476000.png",
     "coverAlt": "A sleek workspace showing a split workflow: automated batch-processing thumbnails on one screen, and high-resolution manual retouching with a stylus on the other.",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Rand Khaled",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3009,10 +3009,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_astrell_approach_1785542428099.png",
     "coverAlt": "Abstract 3D digital architecture representing ASTRELL design philosophy",
     "author": {
-      "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3066,10 +3066,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_dark_mode_1785542436369.png",
     "coverAlt": "Glowing digital dark mode design tokens interface",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3122,10 +3122,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_fluid_motion_1785542444285.png",
     "coverAlt": "Abstract fluid motion graphics",
     "author": {
-      "name": "Simon A-A",
-      "role": "Lead Web Architect & Technical Director",
-      "avatar": "/author_simon_a_1785542523544.png",
-      "bio": "Specializing in high-performance Next.js 15 frontend architecture, edge caching networks, and WebGL graphics.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3177,9 +3177,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Luxury architectural design aesthetic representing premium brand presence",
     "author": {
       "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3230,10 +3230,10 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverImage": "/blog/blog_cover_conversion_1785542466151.png",
     "coverAlt": "Analytics dashboard showing conversion rate improvement metrics",
     "author": {
-      "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "name": "Elena Varga",
+      "role": "LEAD WEB ARCHITECT",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80",
+      "bio": "Architecting scalable web solutions, multi-platform UI frameworks, and conversion-engineered digital products.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },
@@ -3288,9 +3288,9 @@ export const BLOG_PREVIEWS: BlogPreview[] = [
     "coverAlt": "Creative team reviewing brand identity mood boards and design directions in a modern studio environment",
     "author": {
       "name": "Rand Khaled",
-      "role": "Director of Growth & Performance Marketing",
-      "avatar": "/author_rand_khaled_1785542515171.png",
-      "bio": "Pioneering strategic brand design, AEO/GEO optimization, and revenue attribution tracking for high-growth technology platforms.",
+      "role": "CREATIVE DIRECTOR & BRAND LEAD",
+      "avatar": "/rand_khaled.jpg",
+      "bio": "Guiding enterprise brand identity architecture, strategic positioning, and spatial experience design for market-leading global brands.",
       "twitter": "https://twitter.com/astrells",
       "linkedin": "https://linkedin.com/company/astrells"
     },

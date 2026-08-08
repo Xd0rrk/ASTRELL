@@ -41,7 +41,7 @@ export const BATCH_07_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'Luxury rigid packaging unboxing experience mockup with gold foil stamping on dark background',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Structural Packaging Design: Unboxing Experience Guide',
  description: 'Master structural packaging design and unboxing UX. Learn rigid box construction, paper stock selection, and print finishing with ASTRELL.',
@@ -214,7 +214,7 @@ export const BATCH_07_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'Tactile eco-friendly cotton paper sample box with embossed leaf motif on dark background',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Sustainable Luxury Packaging Materials & Engineering',
  description: 'Discover sustainable luxury packaging materials. Learn FSC papers, soy inks, and plastic-free packaging engineering with ASTRELL.',
@@ -370,7 +370,7 @@ export const BATCH_07_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'Custom D2C corrugated mailer box with printed inner interior graphic pattern on dark surface',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'D2C Packaging Strategy: Transit Protection & Brand UX',
  description: 'Optimize D2C shipping packaging. Learn corrugated mailer engineering, ISTA drop testing, and unboxing design with ASTRELL.',
@@ -527,7 +527,7 @@ export const BATCH_07_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'Close-up detail photography of metallic copper foil stamping and micro-embossing on matte black box',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'Packaging Print Finishes: Foil Stamping & Embossing',
  description: 'Explore luxury packaging print finishes. Learn hot foil stamping, blind embossing, and spot UV techniques with ASTRELL packaging experts.',
@@ -684,7 +684,7 @@ export const BATCH_07_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_agency_selection_1785542476000.png',
  coverAlt: 'FMCG product packaging line-up displaying strong brand block color hierarchy on retail shelf display',
- author: AUTHORS.nadia,
+ author: AUTHORS.julian,
  seo: {
  title: 'FMCG Packaging Architecture & Shelf Pop Strategy',
  description: 'Master FMCG packaging design. Discover retail shelf pop strategies, brand block hierarchy, and PDP regulatory design with ASTRELL.',

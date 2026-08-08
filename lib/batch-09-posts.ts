@@ -42,7 +42,7 @@ export const BATCH_09_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: 'AI search engine citation node network showing brand entity graph connections on dark screen',
- author: AUTHORS.rand,
+ author: AUTHORS.simon,
  seo: {
  title: 'AEO & GEO Strategy: AI Search Optimization Guide | ASTRELL',
  description: 'Master Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO). Learn how ASTRELL positions brands for citation in ChatGPT, Perplexity, and Google AI Overviews.',
@@ -534,7 +534,7 @@ export const BATCH_09_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: 'AI brand visibility tracking dashboard displaying citation share metrics across ChatGPT and Perplexity on dark UI',
- author: AUTHORS.rand,
+ author: AUTHORS.simon,
  seo: {
  title: 'Measuring Brand Visibility in ChatGPT & Perplexity',
  description: 'Audit your brand visibility across AI search engines. Learn AEO Share of Voice tracking and prompt analysis with ASTRELL.',

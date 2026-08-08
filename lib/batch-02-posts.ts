@@ -39,9 +39,9 @@ export const BATCH_02_POSTS: BlogPost[] = [
  featured: true,
  trending: true,
  popular: false,
- coverImage: '/blog/astrell_ai_prompt_system_hero.png',
+ coverImage: '/blog/graphic_designer_custom_ai.webp',
  coverAlt: 'Conceptual visualization of a Midjourney prompt terminal interface overlapping with high-fidelity graphic design assets',
- author: AUTHORS.julian,
+ author: AUTHORS.rand,
  seo: {
  title: 'Graphic Designer\'s Guide to Custom AI Prompt Systems',
  description: 'Learn how to build a modular Midjourney prompting system. Discover how graphic designers can use custom AI instructions and style references for consistent results.',
@@ -218,7 +218,7 @@ export const BATCH_02_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/astrell_rebrand_risk_management_hero.png',
  coverAlt: 'Abstract 3D architectural render of interlocking obsidian balance scales with orange indicators on dark background',
- author: AUTHORS.elena,
+ author: AUTHORS.rand,
  seo: {
  title: 'Rebranding Risk Management: Navigating Transitions',
  description: 'Manage corporate rebranding risks effectively. Protect backlink equity, SEO rankings, and customer trust during major brand transitions.',
@@ -387,7 +387,7 @@ export const BATCH_02_POSTS: BlogPost[] = [
  popular: false,
  coverImage: '/blog/astrell_color_typography_psychology_hero.png',
  coverAlt: 'Close-up macro photography of custom typography swatches and vibrant color spectrum cards on dark oak desk',
- author: AUTHORS.nadia,
+ author: AUTHORS.rand,
  seo: {
  title: 'Color Psychology & Typography in Brand Perception',
  description: 'Discover the science of color psychology and typography in branding. Learn how ASTRELL designs visual tokens that build instant customer trust.',
@@ -560,9 +560,9 @@ export const BATCH_02_POSTS: BlogPost[] = [
  featured: false,
  trending: false,
  popular: true,
- coverImage: '/blog/astrell_b2b_brand_strategy_hero.png',
+ coverImage: '/blog/astrell_b2b_brand_strategy_hero.webp',
  coverAlt: '3D rendering of complex technical node network transforming into a clean minimalist orange brand logo structure on dark glass',
- author: AUTHORS.elena,
+ author: AUTHORS.rand,
  seo: {
  title: 'B2B Brand Identity Strategy: Converting Complexity',
  description: 'Transform complex B2B products into clear visual identities. Learn how strategic design speeds up enterprise sales cycles.',
@@ -715,9 +715,9 @@ export const BATCH_02_POSTS: BlogPost[] = [
  featured: false,
  trending: true,
  popular: false,
- coverImage: '/blog/astrell_rebranding_mistakes_hero.png',
+ coverImage: '/blog/astrell_rebranding_mistakes_hero.webp',
  coverAlt: 'Minimalist conceptual composition showing a dark polished stone maze with a glowing orange path leading out',
- author: AUTHORS.elena,
+ author: AUTHORS.rand,
  seo: {
  title: 'Common Enterprise Rebranding Mistakes & Solutions',
  description: 'Discover the top rebranding mistakes enterprise companies make. Learn how ASTRELL de-risks corporate identity overhauls.',

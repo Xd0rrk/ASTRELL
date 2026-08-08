@@ -39,9 +39,9 @@ export const BATCH_05_POSTS: BlogPost[] = [
  featured: false,
  trending: true,
  popular: false,
- coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
+ coverImage: '/blog/mobile_first_ux_architecture.webp',
  coverAlt: 'Mobile interface layout showing ergonomic thumb zone reach mapping on dark glass device display',
- author: AUTHORS.julian,
+ author: AUTHORS.elena,
  seo: {
  title: 'Mobile-First UX Architecture: Touch Dynamics Guide',
  description: 'Master mobile-first UX design. Discover thumb zone ergonomics, 48px touch targets, and fluid mobile interactions with ASTRELL.',
@@ -197,7 +197,7 @@ export const BATCH_05_POSTS: BlogPost[] = [
  featured: false,
  trending: true,
  popular: true,
- coverImage: '/blog/blog_cover_fluid_motion_1785542444285.png',
+ coverImage: '/blog/micro_interactions_motion_ux.webp',
  coverAlt: 'Abstract fluid motion graphics depicting UI micro-interaction state transitions',
  author: AUTHORS.nadia,
  seo: {
@@ -355,9 +355,9 @@ export const BATCH_05_POSTS: BlogPost[] = [
  featured: false,
  trending: false,
  popular: true,
- coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
+ coverImage: '/blog/information_architecture_saas.webp',
  coverAlt: '3D tree diagram of complex SaaS information architecture taxonomy on dark background',
- author: AUTHORS.julian,
+ author: AUTHORS.elena,
  seo: {
  title: 'Information Architecture for SaaS: Enterprise Navigation',
  description: 'Master SaaS Information Architecture. Organize complex B2B software data hierarchies with ASTRELL taxonomy frameworks.',
@@ -512,9 +512,9 @@ export const BATCH_05_POSTS: BlogPost[] = [
  featured: true,
  trending: true,
  popular: true,
- coverImage: '/blog/section_dark_mode_contrast_1785542493475.png',
+ coverImage: '/blog/enterprise_dashboard_ux.webp',
  coverAlt: 'Enterprise analytics dashboard layout with Bento cards and glowing line charts on dark UI surface',
- author: AUTHORS.julian,
+ author: AUTHORS.elena,
  seo: {
  title: 'Enterprise Dashboard UX Design: Analytics Principles',
  description: 'Design intuitive enterprise dashboards. Discover ASTRELL Bento grid data visualization principles for executive analytics software.',
@@ -671,7 +671,7 @@ export const BATCH_05_POSTS: BlogPost[] = [
  popular: true,
  coverImage: '/blog/blog_cover_astrell_approach_1785542428099.png',
  coverAlt: 'UX prototyping wireframe cards transitioning into high-fidelity dark UI mockup',
- author: AUTHORS.julian,
+ author: AUTHORS.elena,
  seo: {
  title: 'UX Prototyping Guide: Wireframes to High-Fidelity',
  description: 'Discover UX prototyping best practices. Learn how ASTRELL wireframes and interactive prototypes de-risk product engineering.',
